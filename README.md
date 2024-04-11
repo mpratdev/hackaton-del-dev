@@ -1,2 +1,3 @@
-# hackaton-del-dev
-Desarrollo para la Hackatón del Dev
+# Hackaton del Dev
+Proyecto web...
+## El readme se actualizará en los próximos días
