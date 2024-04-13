@@ -1,0 +1,9 @@
+---
+interface Props {
+	size: string;
+}
+
+const { size } = Astro.props;
+---
+
+<img style={{ height: size, width: size}} id="image" src="../kiwi.png">
