@@ -1,13 +1,90 @@
 ---
-import KiwiIcon from '../../public/icons/KiwiImage.astro'
+import KiwiIcon from '../../public/icons/KiwiImage.astro';
+import LogInButton from './buttons/LogInButton.astro';
+import SearchButton from './buttons/SearchButton.astro';
 ---
 
 <nav>
-    <KiwiIcon size="40px"/>
+    <a href="#" class="left-content">
+        <KiwiIcon size="65px" />
+        <span>kiwi</span>
+    </a>
+    <div class="center-anchors">
+        <a class="page-anchor" href="#">home</a>
+        <a class="page-anchor" href="../pages/Shop.astro">shop</a>
+        <a class="page-anchor" href="../pages/KiwiPro.astro">kiwiPro</a>
+        <a class="page-anchor" href="../pages/News.astro">news</a>
+        <a class="page-anchor" href="../pages/About.astro">about us</a>
+        <a class="page-anchor" href="../pages/Support.astro">support</a>
+    </div>
+    <div class="right-content">
+        <div id="search">
+            <SearchButton />
+        </div>
+        <LogInButton />
+    </div>
 </nav>
 
 <style>
     nav {
-        height: 9vh;
+        display: flex;
+        height: 88px;
+        align-items: center;
+        box-sizing: border-box;
+        font-size: 1.5rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .page-anchor {
+        font-size: inherit;
+        color: #ddd;
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+
+    .page-anchor:active {
+        color: #B5E98A;
+    }
+
+    .left-content {
+        width: 170px;
+        margin-left: 40px;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .left-content span {
+        font-weight: 600;
+        font-style: italic;
+        color: #ddd;
+        margin-left: 10px;
+        font-size: 2rem;
+        color: #B5E98A;
+    }
+
+    .center-anchors {
+        width: 722px;
+        margin: auto;
+    }
+
+    .right-content {
+        display: flex;
+        width: 160px;
+        margin-right: 40px;
+        margin-left: auto;
+        text-align: end;
+        box-sizing: border-box;
+        height: 50px;
+        align-content: center;
+        justify-content: space-between;
+    }
+
+    #search {
+        box-sizing: border-box;
+        padding-top: 10px;
     }
 </style>
