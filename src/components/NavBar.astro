@@ -1,10 +1,15 @@
 ---
 import KiwiIcon from '../../public/icons/KiwiImage.astro';
+import Menu from '../../public/icons/Menu.astro';
 import LogInButton from './buttons/LogInButton.astro';
+import MenuSearch from './buttons/MenuButton.astro';
 import SearchButton from './buttons/SearchButton.astro';
 ---
 
 <nav>
+    <div class="menu">
+        <MenuSearch />
+    </div>
     <a href="#" class="left-content">
         <KiwiIcon size="65px" />
         <span>kiwi</span>
@@ -83,8 +88,55 @@ import SearchButton from './buttons/SearchButton.astro';
         justify-content: space-between;
     }
 
+    .menu {
+        height: 50px;
+        display: none;
+    }
+
     #search {
         box-sizing: border-box;
         padding-top: 10px;
+    }
+
+    @media screen and (max-width: 800px) {
+        .center-anchors {
+            display: none;
+        }
+
+        .menu {
+            display: block;
+            color: #ddd;
+        }
+
+        .left-content {
+            margin: auto;
+            width: 120px;
+        }
+    }
+
+    @media screen and (max-width: 1150px) {
+        nav {
+            font-size: 1.2rem;
+        }
+
+        .center-anchors {
+            width: 638px;
+        }
+    }
+
+    @media screen and (max-width: 1050px) {
+        nav {
+            font-size: 0.98rem;
+        }
+    }
+
+    @media screen and (max-width: 955px) {
+        nav {
+            font-size: 0.8rem;
+        }
+
+        .left-content span {
+            font-size: 1.5rem;
+        }
     }
 </style>

@@ -13,7 +13,7 @@ const { title } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/png" href="/kiwi.png" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
@@ -32,7 +32,7 @@ const { title } = Astro.props;
 
 	@font-face {
 		font-family: 'San Francisco';
-		src: url("/public/fonts/SFPRODISPLAYREGULAR.OTF");
+		src: url("/fonts/SFPRODISPLAYREGULAR.OTF");
 		font-weight: 400;
 		font-style: normal;
 		font-display: swap;
@@ -40,7 +40,7 @@ const { title } = Astro.props;
 
 	@font-face {
 		font-family: 'San Francisco';
-		src: url("/public/fonts/SFPRODISPLAYMEDIUM.OTF");
+		src: url("/fonts/SFPRODISPLAYMEDIUM.OTF");
 		font-weight: 500;
 		font-style: normal;
 		font-display: swap;
@@ -48,7 +48,7 @@ const { title } = Astro.props;
 
 	@font-face {
 		font-family: 'San Francisco';
-		src: url("/public/fonts/SFPRODISPLAYBOLD.OTF");
+		src: url("/fonts/SFPRODISPLAYBOLD.OTF");
 		font-weight: 700;
 		font-style: normal;
 		font-display: swap;
@@ -56,7 +56,7 @@ const { title } = Astro.props;
 
 	@font-face {
 		font-family: 'San Francisco';
-		src: url("/public/fonts/SFPRODISPLAYLIGHTITALIC.OTF");
+		src: url("/fonts/SFPRODISPLAYLIGHTITALIC.OTF");
 		font-weight: 300;
 		font-style: italic;
 		font-display: swap;
@@ -64,7 +64,7 @@ const { title } = Astro.props;
 
 	@font-face {
 		font-family: 'San Francisco';
-		src: url("/public/fonts/SFPRODISPLAYSEMIBOLDITALIC.OTF");
+		src: url("/fonts/SFPRODISPLAYSEMIBOLDITALIC.OTF");
 		font-weight: 600;
 		font-style: italic;
 		font-display: swap;
