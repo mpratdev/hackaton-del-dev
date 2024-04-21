@@ -1,0 +1,118 @@
+---
+import KiwiIcon from "../../public/icons/KiwiImage.astro"
+import PageInfo from "./footer/PageInfo.astro"
+
+const year = new Date().getFullYear()
+---
+
+<footer>
+    <a href="/" class="left-content">
+        <KiwiIcon size="65px" />
+        <span>kiwi</span>
+    </a>
+
+    <div class="content">
+        <PageInfo>
+            <a class="page-anchor" href="/">home</a>
+        </PageInfo>
+        <PageInfo>
+            <a class="page-anchor" href="/shop">shop</a>
+        </PageInfo>
+        <PageInfo>
+            <a class="page-anchor" href="/kiwipro">kiwiPro</a>
+        </PageInfo>
+        <PageInfo>
+            <a class="page-anchor" href="/news">news</a>
+        </PageInfo>
+        <PageInfo>
+            <a class="page-anchor" href="/about">about us</a>
+        </PageInfo>
+        <PageInfo>
+            <a class="page-anchor" href="/support">support</a>
+        </PageInfo>
+    </div>
+
+    <p class="copyright">Kiwi @{year} | All rights reserved</p>
+</footer>
+
+<style>
+    a {
+        text-decoration: none;
+    }
+
+    .left-content {
+        width: 135px;
+        display: flex;
+        align-items: center;
+        margin: auto;
+    }
+
+    .left-content span {
+        font-weight: 600;
+        font-style: italic;
+        color: #ddd;
+        margin-left: 10px;
+        font-size: 2rem;
+        color: #B5E98A;
+    }
+
+    footer {
+        width: 100%;
+        color: #ddd;
+        text-align: center;
+        background-color: #393939;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .copyright {
+        font-size: 1.5rem;
+    }
+
+    .content {
+        margin: 25px auto;
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .page-anchor {
+        color: #ddd;
+        text-decoration: underline;
+    }
+
+    @media screen and (max-width: 1150px) {
+        .copyright {
+            font-size: 1.2rem;
+        }
+
+        .content {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto;
+        }
+    }
+
+    @media screen and (max-width: 1050px) {
+        .copyright {
+            font-size: 0.98rem;
+        }
+    }
+
+    @media screen and (max-width: 955px) {
+        .copyright {
+            font-size: 0.98rem;
+        }
+    }
+
+    @media screen and (max-width: 880px) {
+        .copyright {
+            font-size: 1.04rem;
+        }
+
+        .content {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto auto;
+        }
+    }
+</style>
