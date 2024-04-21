@@ -1,5 +1,8 @@
 ---
+import Instagram from "../../public/icons/Instagram.astro"
 import KiwiIcon from "../../public/icons/KiwiImage.astro"
+import Twitter from "../../public/icons/Twitter.astro"
+import Facebook from "../../public/icons/Facebook.astro";
 import PageInfo from "./footer/PageInfo.astro"
 
 const year = new Date().getFullYear()
@@ -30,6 +33,14 @@ const year = new Date().getFullYear()
         <PageInfo>
             <a class="page-anchor" href="/support">support</a>
         </PageInfo>
+    </div>
+
+    <hr>
+
+    <div class="socials">
+        <Instagram href="https://instagram.com"/>
+        <Twitter href="https://twitter.com" />
+        <Facebook href="https://facebook.com" />
     </div>
 
     <p class="copyright">Kiwi @{year} | All rights reserved</p>
@@ -80,6 +91,17 @@ const year = new Date().getFullYear()
     .page-anchor {
         color: #ddd;
         text-decoration: underline;
+    }
+
+    hr {
+        width: 80%;
+        color: #ddd;
+        margin-bottom: 20px;
+    }
+
+    .socials {
+        width: 193px;
+        margin: auto;
     }
 
     @media screen and (max-width: 1150px) {
