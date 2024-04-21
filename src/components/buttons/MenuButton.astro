@@ -1,8 +1,14 @@
 ---
 import Menu from "../../../public/icons/Menu.astro";
+
+interface Props {
+    padding?: string
+}
+
+const { padding } = Astro.props;
 ---
 
-<button>
+<button class={padding}>
     <Menu size="30" />
 </button>
 
@@ -12,5 +18,9 @@ import Menu from "../../../public/icons/Menu.astro";
         border: none;
         box-sizing: border-box;
         width: 170px;
+    }
+
+    .yes {
+        padding-right: 30px;
     }
 </style>

@@ -1,6 +1,5 @@
 ---
 import KiwiIcon from '../../public/icons/KiwiImage.astro';
-import Menu from '../../public/icons/Menu.astro';
 import LogInButton from './buttons/LogInButton.astro';
 import MenuSearch from './buttons/MenuButton.astro';
 import SearchButton from './buttons/SearchButton.astro';
@@ -8,19 +7,19 @@ import SearchButton from './buttons/SearchButton.astro';
 
 <nav>
     <div class="menu">
-        <MenuSearch />
+        <MenuSearch padding='yes' />
     </div>
-    <a href="#" class="left-content">
+    <a href="/" class="left-content">
         <KiwiIcon size="65px" />
         <span>kiwi</span>
     </a>
     <div class="center-anchors">
-        <a class="page-anchor" href="#">home</a>
-        <a class="page-anchor" href="/src/pages/section/shop.astro">shop</a>
-        <a class="page-anchor" href="/src/pages/section/kiwipro.astro">kiwiPro</a>
-        <a class="page-anchor" href="/src/pages/section/news.astro">news</a>
-        <a class="page-anchor" href="/src/pages/section/about.astro">about us</a>
-        <a class="page-anchor" href="/src/pages/section/support.astro">support</a>
+        <a class="page-anchor" href="/">home</a>
+        <a class="page-anchor" href="/src/pages/shop.astro">shop</a>
+        <a class="page-anchor" href="/src/pages/kiwipro.astro">kiwiPro</a>
+        <a class="page-anchor" href="/src/pages/news.astro">news</a>
+        <a class="page-anchor" href="/src/pages/about.astro">about us</a>
+        <a class="page-anchor" href="/src/pages/support.astro">support</a>
     </div>
     <div class="right-content">
         <div id="search">
@@ -98,22 +97,6 @@ import SearchButton from './buttons/SearchButton.astro';
         padding-top: 10px;
     }
 
-    @media screen and (max-width: 800px) {
-        .center-anchors {
-            display: none;
-        }
-
-        .menu {
-            display: block;
-            color: #ddd;
-        }
-
-        .left-content {
-            margin: auto;
-            width: 120px;
-        }
-    }
-
     @media screen and (max-width: 1150px) {
         nav {
             font-size: 1.2rem;
@@ -137,6 +120,33 @@ import SearchButton from './buttons/SearchButton.astro';
 
         .left-content span {
             font-size: 1.5rem;
+        }
+    }
+
+    @media screen and (max-width: 880px) {
+        .center-anchors {
+            display: none;
+        }
+
+        .menu {
+            display: block;
+            color: #ddd;
+            width: 130px;
+        }
+
+        .left-content {
+            width: 140px;
+            margin: auto;
+        }
+
+        .left-content span {
+            font-size: 2rem;
+        }
+
+        .right-content {
+            width: 130px;
+            font-size: 1.04rem;
+            margin-left: 0;
         }
     }
 </style>
