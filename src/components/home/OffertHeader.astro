@@ -1,0 +1,99 @@
+<a href="/kiwipro">
+    <header>
+        <div class="new-collection">new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection</div>
+        <div class="content">
+            <p id="kiwipro">KIWI<span id="pro">PRO</span></p>
+        </div>
+        <div class="new-collection">new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection new collection</div>
+    </header>
+</a>
+
+<style>
+    a {
+        text-decoration: none;
+        width: 100%;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    header {
+        background: radial-gradient(#B5E98A 15%, #00D36B, #017f40);
+        border-radius: 12px;
+        font-weight: bold;
+        color: #000;
+        line-height: 0;
+        overflow: hidden;
+    }
+
+    #kiwipro {
+        font-size: 8.2rem;
+        font-style: italic;
+        letter-spacing: 30px;
+        margin: 70px;
+    }
+
+    #pro {
+        color: #00D36B;
+        text-shadow: 2px 2px #000;
+    }
+
+    @media screen and (max-width: 1150px) {
+        #kiwipro {
+            margin: 70px 50px;
+        }
+    }
+
+    @media screen and (max-width: 1050px) {
+        #kiwipro {
+            margin: 70px 30px;
+            font-size: 7rem;
+        }
+    }
+
+    @media screen and (max-width: 955px) {
+        #kiwipro {
+            letter-spacing: 15px;
+            font-size: 6.5rem;
+        }
+    }
+
+    @media screen and (max-width: 880px) {
+        #kiwipro {
+            letter-spacing: 10px;
+            font-size: 6rem;
+            margin: 70px 15px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        #kiwipro {
+            letter-spacing: 0px;
+            font-size: 5.5rem;
+            margin: 70px 10px;
+        }
+    }
+
+    .new-collection {
+        color: #343434;
+        font-style: italic;
+        height: 30px;
+        margin: 0;
+        padding: 0;
+        align-content: center;
+        text-align: center;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        animation: moveText 8s linear infinite;
+    }
+
+    @keyframes moveText {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+</style>

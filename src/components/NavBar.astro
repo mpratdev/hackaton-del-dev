@@ -15,11 +15,11 @@ import SearchButton from './buttons/SearchButton.astro';
     </a>
     <div class="center-anchors">
         <a class="page-anchor" href="/">home</a>
-        <a class="page-anchor" href="/src/pages/shop.astro">shop</a>
-        <a class="page-anchor" href="/src/pages/kiwipro.astro">kiwiPro</a>
-        <a class="page-anchor" href="/src/pages/news.astro">news</a>
-        <a class="page-anchor" href="/src/pages/about.astro">about us</a>
-        <a class="page-anchor" href="/src/pages/support.astro">support</a>
+        <a class="page-anchor" href="/shop">shop</a>
+        <a class="page-anchor" href="/kiwipro">kiwiPro</a>
+        <a class="page-anchor" href="/news">news</a>
+        <a class="page-anchor" href="/about">about us</a>
+        <a class="page-anchor" href="/support">support</a>
     </div>
     <div class="right-content">
         <div id="search">
@@ -114,12 +114,19 @@ import SearchButton from './buttons/SearchButton.astro';
     }
 
     @media screen and (max-width: 955px) {
-        nav {
-            font-size: 0.8rem;
-        }
+        
 
         .left-content span {
             font-size: 1.5rem;
+        }
+
+        .page-anchor {
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+
+        .center-anchors {
+            width: 456px;
         }
     }
 
