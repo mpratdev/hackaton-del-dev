@@ -1,0 +1,81 @@
+---
+import ProductCard from "./ProductCard.astro";
+
+import { zowie } from "../../../public/products/mouse.json";
+
+const { ec2cw, ec2c, ec2v2white } = zowie;
+---
+
+<section class="content">
+    <h2>our top products</h2>
+    <section class="cards">
+        <ProductCard
+            name={ec2cw.name}
+            description={ec2cw.description}
+            img={ec2cw.image}
+        />
+        <ProductCard
+            name={ec2c.name}
+            description={ec2c.description}
+            img={ec2c.image}
+        />
+        <ProductCard
+            name={ec2v2white.name}
+            description={ec2v2white.description}
+            img={ec2v2white.image}
+        />
+    </section>
+</section>
+
+<style>
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2.1rem;
+        color: #ddd;
+    }
+
+    @media screen and (max-width: 1150px) {
+        #kiwipro {
+            margin: 70px 50px;
+        }
+    }
+
+    @media screen and (max-width: 1050px) {
+        #kiwipro {
+            margin: 70px 30px;
+            font-size: 7rem;
+        }
+    }
+
+    @media screen and (max-width: 955px) {
+        #kiwipro {
+            letter-spacing: 15px;
+            font-size: 6.5rem;
+        }
+    }
+
+    @media screen and (max-width: 880px) {
+        #kiwipro {
+            letter-spacing: 10px;
+            font-size: 6rem;
+            margin: 70px 15px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        #kiwipro {
+            letter-spacing: 0px;
+            font-size: 5.5rem;
+            margin: 70px 10px;
+        }
+    }
+</style>
