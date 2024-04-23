@@ -1,14 +1,17 @@
 ---
 import More from "../buttons/More.astro";
+import AddToCart from "../buttons/AddToCart.astro";
+import Brand from "./BrandBanner.astro";
 
 interface Props {
     name: string;
     description: string;
     img: string;
     href: string;
+    brand: string;
 }
 
-const { name, description, img, href } = Astro.props;
+const { name, description, img, href, brand } = Astro.props;
 ---
 
 <div class="product-card">
@@ -20,9 +23,10 @@ const { name, description, img, href } = Astro.props;
         <p class="description">
             {description}
         </p>
+        <Brand brand={brand} />
         <div class="buttons">
             <More href={href} />
-            <!-- AddToCardButton -->
+            <AddToCart />
         </div>
     </div>
 </div>
@@ -64,19 +68,15 @@ const { name, description, img, href } = Astro.props;
     }
 
     .buttons {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
     }
 
     @media screen and (max-width: 880px) {
         .product-card {
             width: 60%;
             height: 100%;
-        }
-
-        .buttons {
-            display: block;
-            text-align: left;
         }
     }
 </style>

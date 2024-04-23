@@ -1,0 +1,37 @@
+---
+import Cart from "../../../public/icons/Cart.astro";
+---
+
+<button>
+    Add
+    <Cart />
+</button>
+
+<style>
+    button {
+        width: 90%;
+        height: 100%;
+        font-family: "San Francisco";
+        font-size: inherit;
+        font-weight: bold;
+        font-style: italic;
+        background-color: #00d46b;
+        border: 1px solid #000;
+        color: #000;
+        padding: 10px 15px;
+        box-sizing: border-box;
+        border-radius: 12px;
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
+    button:active {
+        background: #e1ff91;
+        border: 1px solid #ddd;
+    }
+</style>
