@@ -1,0 +1,33 @@
+---
+interface Props {
+    href: string;
+}
+
+const { href } = Astro.props;
+---
+
+<a href={href}> Go! </a>
+
+<style>
+    a {
+        width: 35%;
+        font-weight: bold;
+        font-style: italic;
+        background-color: transparent;
+        border: 1px solid #ddd;
+        color: #e1ff91;
+        padding: 10px 15px;
+        box-sizing: border-box;
+        border-radius: 12px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    a:hover {
+        cursor: pointer;
+    }
+
+    a:active {
+        background: #00d46b;
+    }
+</style>

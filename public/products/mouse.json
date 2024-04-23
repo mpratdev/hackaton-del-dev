@@ -64,10 +64,10 @@
       }
     },
     "zowie": {
-      "ec2cw": {
-        "name": "Zowie EC2-CW",
-        "description": "Wireless desing with improved receptor, asymmetrical ergonomic design, reduced weight, 24 step sliding wheel, no drivers, sensor 3370.",
-        "image": "https://image.benq.com/is/image/benqco/01-ec2-cw-top?$ResponsivePreset$&fmt=png-alpha",
+      "za12c": {
+        "name": "Zowie ZA12-C",
+        "description": "Symmetrical esports design, high profile, paracord wire, reduced weight, 24 step sliding wheel, no drivers, sensor 3360.",
+        "image": "https://image.benq.com/is/image/benqco/01-ZA11C-top?$ResponsivePreset$&fmt=png-alpha",
         "original-price": "151,24 €",
         "offert-price": "141,24 €",
         "type": "mouse",
