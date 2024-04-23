@@ -3,7 +3,7 @@ import ProductCard from "./ProductCard.astro";
 
 import { zowie } from "../../../public/products/mouse.json";
 
-const { ec2cw, ec2c, ec2v2white } = zowie;
+const { ec2cw, ec2v2white, ec2c } = zowie;
 ---
 
 <section class="content">
@@ -15,14 +15,14 @@ const { ec2cw, ec2c, ec2v2white } = zowie;
             img={ec2cw.image}
         />
         <ProductCard
-            name={ec2c.name}
-            description={ec2c.description}
-            img={ec2c.image}
-        />
-        <ProductCard
             name={ec2v2white.name}
             description={ec2v2white.description}
             img={ec2v2white.image}
+        />
+        <ProductCard
+            name={ec2c.name}
+            description={ec2c.description}
+            img={ec2c.image}
         />
     </section>
 </section>

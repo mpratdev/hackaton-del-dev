@@ -7,7 +7,8 @@
         "original-price": "79,99 €",
         "offert-price": "69,99 €",
         "type": "mouse",
-        "brand": "Razer"
+        "brand": "Razer",
+        "page": "/products/mouse/basilisk"
       },
       "deathadder": {
         "name": "Razer Deathadder V3 Pro",
@@ -16,7 +17,8 @@
         "original-price": "159,99 €",
         "offert-price": "149,99 €",
         "type": "mouse",
-        "brand": "Razer"
+        "brand": "Razer",
+        "page": "/products/mouse/deathadder"
       },
       "viper": {
         "name": "Razer Viper V2 Pro",
@@ -25,7 +27,8 @@
         "original-price": "159,99 €",
         "offert-price": "139,99 €",
         "type": "mouse",
-        "brand": "Razer"
+        "brand": "Razer",
+        "page": "/products/mouse/viperv2"
       }
     },
     "logitech": {
@@ -36,7 +39,8 @@
         "original-price": "165,00 €",
         "offert-price": "150,00 €",
         "type": "mouse",
-        "brand": "Logitech"
+        "brand": "Logitech",
+        "page": "/products/mouse/superlight"
       },
       "g705": {
         "name": "Logitech G705",
@@ -45,7 +49,8 @@
         "original-price": "119,00 €",
         "offert-price": "99,99 €",
         "type": "mouse",
-        "brand": "Logitech"
+        "brand": "Logitech",
+        "page": "/products/mouse/g705"
       },
       "shroud": {
         "name": "Logitech G303 Shroud Edition",
@@ -54,7 +59,8 @@
         "original-price": "145,00 €",
         "offert-price": "135,99 €",
         "type": "mouse",
-        "brand": "Logitech"
+        "brand": "Logitech",
+        "page": "/products/mouse/g303"
       }
     },
     "zowie": {
@@ -65,16 +71,18 @@
         "original-price": "151,24 €",
         "offert-price": "141,24 €",
         "type": "mouse",
-        "brand": "Zowie"
+        "brand": "Zowie",
+        "page": "/products/mouse/ec2cw"
       },
       "ec2c": {
         "name": "Zowie EC2-C",
         "description": "Asymmetrical ergonomic design, reduced weight, paracord wire, 24 step sliding wheel, no drivers, sensor 3370.",
-        "image": "https://image.benq.com/is/image/benqco/01-ec1-c-top?$ResponsivePreset$&fmt=png-alpha",
+        "image": "https://image.benq.com/is/image/benqco/01-FK1plus-b-v2-red?$ResponsivePreset$&fmt=png-alpha",
         "original-price": "70.58 €",
         "offert-price": "65.58 €",
         "type": "mouse",
-        "brand": "Zowie"
+        "brand": "Zowie",
+        "page": "/products/mouse/ec2c"
       },
       "ec2v2white": {
         "name": "Zowie EC2 V2 White Edition",
@@ -83,7 +91,8 @@
         "original-price": "149,99 €",
         "offert-price": "139,99 €",
         "type": "mouse",
-        "brand": "Zowie"
+        "brand": "Zowie",
+        "page": "/products/mouse/ec2v2white"
       }
     }
 }
