@@ -1,42 +1,29 @@
 ---
-import ProductCard from "./ProductCard.astro";
-
-import { zowie } from "../../../public/products/mouse.json";
-
-const { za12c, ec2v2white, ec2c } = zowie;
+import Brand from "./Brand.astro";
 ---
 
 <section class="content">
-    <h2>Top Products</h2>
+    <h2>Brands</h2>
     <section class="cards">
-        <ProductCard
-            name={za12c.name}
-            description={za12c.description}
-            img={za12c.image}
-            href={za12c.page}
-            brand={za12c.brand}
-        />
-        <ProductCard
-            name={ec2v2white.name}
-            description={ec2v2white.description}
-            img={ec2v2white.image}
-            href={ec2v2white.page}
-            brand={za12c.brand}
-        />
-        <ProductCard
-            name={ec2c.name}
-            description={ec2c.description}
-            img={ec2c.image}
-            href={ec2c.page}
-            brand={za12c.brand}
-        />
+        <Brand href="/" brand="kiwi">
+            <img class="brand-img" src="../../../public/kiwi.png" />
+        </Brand>
+        <Brand href="https://zowie.benq.eu" brand="zowie">
+            <img class="brand-img" src="../../../public/zowie.png" />
+        </Brand>
+        <Brand href="https://logitech.com" brand="logitech">
+            <img class="brand-img" src="../../../public/logitech.webp" />
+        </Brand>
+        <Brand href="https://row.hyperx.com" brand="hyperx">
+            <img class="brand-img" src="../../../public/hyperx.png" />
+        </Brand>
     </section>
 </section>
 
 <style>
     .cards {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
     }
 
@@ -51,10 +38,18 @@ const { za12c, ec2v2white, ec2c } = zowie;
         text-shadow: 2px 2px #000;
     }
 
+    .break {
+        display: none;
+    }
+
+    .brand-img {
+        height: 80px;
+    }
+
     @media screen and (max-width: 880px) {
         .cards {
-            grid-template-columns: 1fr;
-            grid-template-rows: auto auto auto;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
         }
     }
 </style>

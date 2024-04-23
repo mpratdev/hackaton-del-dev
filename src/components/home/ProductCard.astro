@@ -30,6 +30,7 @@ const { name, description, img, href, brand } = Astro.props;
         </div>
     </div>
 </div>
+<br class="break" />
 
 <style>
     .product-card {
@@ -40,7 +41,7 @@ const { name, description, img, href, brand } = Astro.props;
         border-radius: 12px;
         box-sizing: border-box;
         box-shadow: 0px 0px 15px -10px #ddd;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
     }
 
     img {
@@ -73,10 +74,18 @@ const { name, description, img, href, brand } = Astro.props;
         grid-template-rows: auto;
     }
 
+    .break {
+        display: none;
+    }
+
     @media screen and (max-width: 880px) {
         .product-card {
             width: 60%;
             height: 100%;
+        }
+
+        .break {
+            display: block;
         }
     }
 </style>

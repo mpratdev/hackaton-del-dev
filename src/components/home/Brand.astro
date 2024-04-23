@@ -1,0 +1,49 @@
+---
+interface Props {
+    brand: string;
+    href: string;
+}
+
+const { brand, href } = Astro.props;
+---
+
+<a href={href} id={brand} class="brand-card" target="_blank" rel="noreferrer">
+    <slot />
+</a>
+
+<style>
+    .brand-card {
+        width: 90%;
+        height: 120px;
+        margin: auto;
+        border-radius: 12px;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    #kiwi {
+        background: linear-gradient(#dbdbdb, #00d36b);
+    }
+
+    #zowie {
+        background: linear-gradient(#dbdbdb, #d4003b);
+    }
+
+    #logitech {
+        background: linear-gradient(#dbdbdb, #00a7e0);
+    }
+
+    #hyperx {
+        background: linear-gradient(#dbdbdb, #c2112d);
+    }
+
+    .break {
+        display: none;
+    }
+
+    @media screen and (max-width: 880px) {
+        .brand-card {
+            margin-bottom: 20px;
+        }
+    }
+</style>
