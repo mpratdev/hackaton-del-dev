@@ -1,0 +1,58 @@
+---
+import Why from "./Why.astro";
+---
+
+<section class="content">
+    <h2>It's All Here</h2>
+    <section class="whys">
+        <Why
+            image="../../../public/truck-delivery.svg"
+            title="FREE DELIVER."
+            content="Get free shipping on orders over 15 €! Elevate your tech game hassle-free. Finalize your order and enjoy seamless delivery to your doorstep. Shop now!"
+            anchor=""
+        />
+        <Why
+            image="../../../public/return-check.svg"
+            title="FREE RETURNS."
+            content="Shop confidently with hassle-free returns. Reach out to us for stress-free exchanges or returns. Your satisfaction is our priority!"
+            anchor=""
+        />
+        <Why
+            image="../../../public/gratitude.svg"
+            title="THANK TO LOGITECH, ZOWIE & HYPERX."
+            content="We're grateful for your unwavering support at Kiwi. Together, we've created innovative moments. Thank Logitech, Zowie, HyperX and all you for believing in our vision. Here's to more triumphs ahead!"
+            anchor="#brands"
+            double="double"
+        />
+    </section>
+
+    <style>
+        .content {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .whys {
+            width: 90%;
+            padding: 25px;
+            background-color: #222;
+            border-radius: 12px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+            grid-template-rows: auto;
+        }
+
+        h2 {
+            font-size: 2.1rem;
+            color: #b5e98a;
+            text-shadow: 2px 2px #000;
+        }
+
+        @media screen and (max-width: 880px) {
+            .whys {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto auto;
+            }
+        }
+    </style>
+</section>

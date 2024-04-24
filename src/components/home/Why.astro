@@ -1,0 +1,51 @@
+---
+interface Props {
+    image: string;
+    title: string;
+    content: string;
+    anchor?: string;
+    double?: string;
+}
+
+const { image, title, content, anchor, double } = Astro.props;
+---
+
+<div class={double}>
+    <img src={image} />
+    <h3>{title}</h3>
+    <p class="text">{content}</p>
+    {
+        anchor && (
+            <p>
+                Visit all brands <a href={anchor}>here.</a>
+            </p>
+        )
+    }
+</div>
+
+<style>
+    img {
+        height: 25%;
+    }
+
+    div {
+        padding: 10px 30px;
+        color: #ddd;
+    }
+
+    h3,
+    a {
+        color: #e1ff91;
+    }
+
+    .text {
+        font-size: small;
+    }
+
+    @media screen and (max-width: 880px) {
+        .double {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+</style>
