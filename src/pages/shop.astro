@@ -1,7 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Device from "../components/shop/Device.astro";
 ---
 
 <Layout title="Kiwi | Shop">
-    <h1>SHOP</h1>
+    <Device href="/products/keyboard" deviceName="keyboard" />
+    <Device href="/products/mouse" deviceName="mouse" position="middle" />
+    <Device href="/products/mousepad" deviceName="mousepad" />
 </Layout>

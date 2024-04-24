@@ -1,0 +1,91 @@
+---
+interface Props {
+    deviceName: string;
+    href: string;
+    position?: string;
+}
+
+const { deviceName, href, position } = Astro.props;
+---
+
+<a id={deviceName} href={href}>
+    <div id={position} class="container">
+        <div class="content">
+            <p id="device">{deviceName.toUpperCase()}</p>
+        </div>
+    </div>
+</a>
+
+<style>
+    a {
+        text-decoration: none;
+        width: 100%;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .container {
+        border-radius: 12px;
+        font-weight: bold;
+        color: #000;
+        line-height: 0;
+        overflow: hidden;
+    }
+
+    #keyboard div {
+        background: radial-gradient(#8ad4e9 15%, #00b5e9, #005e7f);
+    }
+
+    #mouse div {
+        background: radial-gradient(#dab2ff 15%, #c99bff, #785c89);
+    }
+
+    #mousepad div {
+        background: radial-gradient(#ff9b9b 15%, #ff6666, #7f3232);
+    }
+
+    #middle {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    #device {
+        font-style: italic;
+        letter-spacing: 30px;
+        margin: 70px 30px;
+        font-size: 7rem;
+    }
+
+    @media screen and (max-width: 955px) {
+        #device {
+            letter-spacing: 15px;
+            font-size: 6.5rem;
+        }
+    }
+
+    @media screen and (max-width: 880px) {
+        #device {
+            letter-spacing: 10px;
+            font-size: 6rem;
+            margin: 70px 15px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        #device {
+            letter-spacing: 0px;
+            font-size: 5.5rem;
+            margin: 70px 10px;
+        }
+    }
+
+    @media screen and (max-width: 440px) {
+        #device {
+            letter-spacing: 0px;
+            font-size: 4.5rem;
+            margin: 70px 10px;
+        }
+    }
+</style>

@@ -1,0 +1,18 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { razer, logitech, zowie } from "../../../public/products/mouse.json";
+
+const { device } = Astro.params;
+
+export async function getStaticPaths() {
+    return [
+        { params: { device: "keyboard" } },
+        { params: { device: razer.basilisk.type } },
+        { params: { device: "mousepad" } },
+    ];
+}
+---
+
+<Layout title="Post">
+    <h1>{device}</h1>
+</Layout>
