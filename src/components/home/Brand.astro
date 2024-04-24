@@ -1,14 +1,14 @@
 ---
 interface Props {
-    brand: string;
     href: string;
+    img: string;
 }
 
-const { brand, href } = Astro.props;
+const { href, img } = Astro.props;
 ---
 
-<a href={href} id={brand} class="brand-card" target="_blank" rel="noreferrer">
-    <slot />
+<a href={href} class="brand-card" target="_blank" rel="noreferrer">
+    <img class="brand-img" src={img} />
 </a>
 
 <style>
@@ -19,22 +19,21 @@ const { brand, href } = Astro.props;
         border-radius: 12px;
         box-sizing: border-box;
         padding: 20px;
-    }
-
-    #kiwi {
+        transition: 500ms padding;
         background: linear-gradient(#dbdbdb, #00d36b);
     }
 
-    #zowie {
-        background: linear-gradient(#dbdbdb, #d4003b);
+    .brand-img {
+        height: 80px;
+        transition: 500ms height;
     }
 
-    #logitech {
-        background: linear-gradient(#dbdbdb, #00a7e0);
+    .brand-card:hover .brand-img {
+        height: 95px;
     }
 
-    #hyperx {
-        background: linear-gradient(#dbdbdb, #c2112d);
+    .brand-card:hover {
+        padding: 12px;
     }
 
     .break {

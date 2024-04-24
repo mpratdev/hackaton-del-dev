@@ -1,26 +1,84 @@
 ---
 import Menu from "../../../public/icons/Menu.astro";
-
-interface Props {
-    padding?: string
-}
-
-const { padding } = Astro.props;
 ---
 
-<button class={padding}>
-    <Menu size="30" />
-</button>
+<div class="menu">
+    <label for="touch">
+        <Menu size="30" />
+    </label>
+    <input type="checkbox" id="touch" />
+
+    <ul class="slide">
+        <li><a id="home" class="page-anchor" href="/">home</a></li>
+        <li><a id="shop" class="page-anchor" href="/shop">shop</a></li>
+        <li><a id="kiwiPro" class="page-anchor" href="/kiwipro">kiwiPro</a></li>
+        <li><a id="news" class="page-anchor" href="/news">news</a></li>
+        <li><a id="about" class="page-anchor" href="/about">about us</a></li>
+        <li><a id="support" class="page-anchor" href="/support">support</a></li>
+    </ul>
+</div>
 
 <style>
-    button {
-        background-color: transparent;
-        border: none;
-        box-sizing: border-box;
-        width: 170px;
+    li a {
+        text-decoration: none;
+        color: #2d2f31;
+        font-weight: bold;
+        color: #e1ff91;
+        text-shadow: 1px 1px #222;
     }
 
-    .yes {
+    .slide {
+        width: 100%;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+        background: linear-gradient(#343434, #232323);
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: -30px;
+    }
+
+    .slide li {
+        padding: 15px 10px;
+    }
+
+    #touch {
+        height: 0px;
+    }
+
+    #touch:checked + .slide {
+        max-height: 150px;
+        position: absolute;
+    }
+
+    .menu {
+        height: 50px;
+        display: none;
+        box-sizing: border-box;
+        padding-top: 10px;
+        margin-left: 30px;
+        border: none;
+        box-sizing: border-box;
         padding-right: 30px;
+        z-index: 2;
+    }
+
+    @media screen and (max-width: 880px) {
+        .menu {
+            display: block;
+            color: #ddd;
+            width: 111.5px;
+        }
+    }
+
+    label {
+        justify-items: center;
+    }
+
+    @media screen and (max-width: 440px) {
+        .menu {
+            margin-left: 0px;
+        }
     }
 </style>

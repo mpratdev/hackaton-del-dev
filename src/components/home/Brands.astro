@@ -5,18 +5,13 @@ import Brand from "./Brand.astro";
 <section class="content">
     <h2>Brands</h2>
     <section class="cards">
-        <Brand href="/" brand="kiwi">
-            <img class="brand-img" src="../../../public/kiwi.png" />
-        </Brand>
-        <Brand href="https://zowie.benq.eu" brand="zowie">
-            <img class="brand-img" src="../../../public/zowie.png" />
-        </Brand>
-        <Brand href="https://logitech.com" brand="logitech">
-            <img class="brand-img" src="../../../public/logitech.webp" />
-        </Brand>
-        <Brand href="https://row.hyperx.com" brand="hyperx">
-            <img class="brand-img" src="../../../public/hyperx.png" />
-        </Brand>
+        <Brand href="/" img="../../../public/kiwi.png" />
+        <Brand href="https://zowie.benq.eu" img="../../../public/zowie.png" />
+        <Brand
+            href="https://logitech.com"
+            img="../../../public/logitech.webp"
+        />
+        <Brand href="https://row.hyperx.com" img="../../../public/hyperx.png" />
     </section>
 </section>
 
@@ -40,10 +35,6 @@ import Brand from "./Brand.astro";
 
     .break {
         display: none;
-    }
-
-    .brand-img {
-        height: 80px;
     }
 
     @media screen and (max-width: 880px) {

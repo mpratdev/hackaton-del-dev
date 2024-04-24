@@ -6,4 +6,12 @@ interface Props {
 const { size } = Astro.props;
 ---
 
-<img style={{ height: size, width: size}} src="../kiwi.png">
+<img style={{ height: size, width: size }} src="../kiwi.png" />
+
+<style>
+	@media screen and (max-width: 440px) {
+		img {
+			margin: auto;
+		}
+	}
+</style>

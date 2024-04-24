@@ -1,14 +1,12 @@
 ---
-import KiwiIcon from '../../public/icons/KiwiImage.astro';
-import LogInButton from './buttons/LogInButton.astro';
-import MenuSearch from './buttons/MenuButton.astro';
-import SearchButton from './buttons/SearchButton.astro';
+import KiwiIcon from "../../public/icons/KiwiImage.astro";
+import LogInButton from "./buttons/LogInButton.astro";
+import MenuButton from "./buttons/MenuButton.astro";
+import SearchButton from "./buttons/SearchButton.astro";
 ---
 
 <nav>
-    <div class="menu">
-        <MenuSearch padding='yes' />
-    </div>
+    <MenuButton padding="yes" />
     <a href="/" class="left-content">
         <KiwiIcon size="65px" />
         <span>kiwi</span>
@@ -50,7 +48,7 @@ import SearchButton from './buttons/SearchButton.astro';
     }
 
     .page-anchor:active {
-        color: #B5E98A;
+        color: #b5e98a;
     }
 
     .left-content {
@@ -67,7 +65,7 @@ import SearchButton from './buttons/SearchButton.astro';
         color: #ddd;
         margin-left: 10px;
         font-size: 2rem;
-        color: #B5E98A;
+        color: #b5e98a;
     }
 
     .center-anchors {
@@ -87,12 +85,7 @@ import SearchButton from './buttons/SearchButton.astro';
         justify-content: space-between;
     }
 
-    .menu {
-        height: 50px;
-        display: none;
-    }
-
-    #search, .menu {
+    #search {
         box-sizing: border-box;
         padding-top: 10px;
     }
@@ -133,12 +126,6 @@ import SearchButton from './buttons/SearchButton.astro';
             display: none;
         }
 
-        .menu {
-            display: block;
-            color: #ddd;
-            width: 130px;
-        }
-
         .left-content {
             width: 140px;
             margin: auto;
@@ -152,6 +139,16 @@ import SearchButton from './buttons/SearchButton.astro';
             width: 130px;
             font-size: 1.04rem;
             margin-left: 0;
+        }
+    }
+
+    @media screen and (max-width: 440px) {
+        .left-content span {
+            display: none;
+        }
+
+        .right-content {
+            margin-right: 5px;
         }
     }
 </style>
