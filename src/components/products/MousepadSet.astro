@@ -1,0 +1,85 @@
+---
+import { zowie, artisan } from "../../../public/products/mousepad.json";
+import Product from "./Product.astro";
+
+const { ninjafxhayate, ninjafxraiden, ninjafxzero } = artisan;
+const { gsrse, gtfx, gsrsegrey } = zowie;
+---
+
+<h2>ZOWIE</h2>
+<section class="brand-products">
+    <Product
+        name={gtfx.name}
+        description={gtfx.description}
+        image={gtfx.image}
+        originalPrice={gtfx["original-price"]}
+        offertPrice={gtfx["offert-price"]}
+        brand={gtfx.brand}
+        page={gtfx.page}
+    />
+    <Product
+        name={gsrse.name}
+        description={gsrse.description}
+        image={gsrse.image}
+        originalPrice={gsrse["original-price"]}
+        offertPrice={gsrse["offert-price"]}
+        brand={gsrse.brand}
+        page={gsrse.page}
+    />
+    <Product
+        name={gsrsegrey.name}
+        description={gsrsegrey.description}
+        image={gsrsegrey.image}
+        originalPrice={gsrsegrey["original-price"]}
+        offertPrice={gsrsegrey["offert-price"]}
+        brand={gsrsegrey.brand}
+        page={gsrsegrey.page}
+    />
+</section>
+
+<h2>ARTISAN</h2>
+<section class="brand-products">
+    <Product
+        name={ninjafxhayate.name}
+        description={ninjafxhayate.description}
+        image={ninjafxhayate.image}
+        originalPrice={ninjafxhayate["original-price"]}
+        offertPrice={ninjafxhayate["offert-price"]}
+        brand={ninjafxhayate.brand}
+        page={ninjafxhayate.page}
+    />
+    <Product
+        name={ninjafxraiden.name}
+        description={ninjafxraiden.description}
+        image={ninjafxraiden.image}
+        originalPrice={ninjafxraiden["original-price"]}
+        offertPrice={ninjafxraiden["offert-price"]}
+        brand={ninjafxraiden.brand}
+        page={ninjafxraiden.page}
+    />
+    <Product
+        name={ninjafxzero.name}
+        description={ninjafxzero.description}
+        image={ninjafxzero.image}
+        originalPrice={ninjafxzero["original-price"]}
+        offertPrice={ninjafxzero["offert-price"]}
+        brand={ninjafxzero.brand}
+        page={ninjafxzero.page}
+    />
+</section>
+<!-- LOGITECH --><!-- three articles --><!-- ZOWIE --><!-- three articles -->
+
+<style>
+    .brand-products {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    @media screen and (max-width: 880px) {
+        .brand-products {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+        }
+    }
+</style>

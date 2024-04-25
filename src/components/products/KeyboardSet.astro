@@ -1,0 +1,55 @@
+---
+import { razer, logitech, ducky } from "../../../public/products/keyboard.json";
+import Product from "./Product.astro";
+
+const { blackwidow, deathstalker, huntsman } = razer;
+const { gpro, g513, g910 } = logitech;
+const { one2mini, originvintage, outlaw65 } = ducky;
+---
+
+<h2>RAZER</h2>
+<section class="brand-products">
+    <Product
+        name={gpro.name}
+        description={gpro.description}
+        image={gpro.image}
+        originalPrice={gpro["original-price"]}
+        offertPrice={gpro["offert-price"]}
+        brand={gpro.brand}
+        page={gpro.page}
+    />
+    <Product
+        name={g513.name}
+        description={g513.description}
+        image={g513.image}
+        originalPrice={g513["original-price"]}
+        offertPrice={g513["offert-price"]}
+        brand={g513.brand}
+        page={g513.page}
+    />
+    <Product
+        name={g910.name}
+        description={g910.description}
+        image={g910.image}
+        originalPrice={g910["original-price"]}
+        offertPrice={g910["offer-price"]}
+        brand={g910.brand}
+        page={g910.page}
+    />
+</section>
+<!-- LOGITECH --><!-- three articles --><!-- ZOWIE --><!-- three articles -->
+
+<style>
+    .brand-products {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    @media screen and (max-width: 880px) {
+        .brand-products {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+        }
+    }
+</style>

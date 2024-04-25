@@ -1,0 +1,94 @@
+---
+import More from "../buttons/More.astro";
+import AddToCart from "../buttons/AddToCart.astro";
+import BrandBanner from "../home/BrandBanner.astro";
+
+interface Props {
+    name: string;
+    description: string;
+    image: string;
+    originalPrice: string;
+    offertPrice: string;
+    brand: string;
+    page: string;
+}
+
+const { name, description, image, originalPrice, offertPrice, brand, page } =
+    Astro.props;
+---
+
+<div class="product-card">
+    <a href={page}>
+        <img src={image} />
+    </a>
+    <div class="information">
+        <h3 class="name">{name}</h3>
+        <p class="description">
+            {description}
+        </p>
+        <BrandBanner brand={brand} />
+        <div class="buttons">
+            <More href={page} />
+            <AddToCart />
+        </div>
+    </div>
+</div>
+<br class="break" />
+
+<style>
+    .product-card {
+        width: 90%;
+        height: 100%;
+        background: linear-gradient(#ddd, #232323);
+        margin: auto;
+        border-radius: 12px;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 15px -10px #ddd;
+        padding-bottom: 30px;
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: 0;
+        border-radius: 12px;
+    }
+
+    .information {
+        padding: 5px 24px;
+        text-align: left;
+    }
+
+    .name {
+        color: #e1ff91;
+    }
+
+    .description {
+        color: #ccc;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* number of lines to show */
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+
+    .buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .break {
+        display: none;
+    }
+
+    @media screen and (max-width: 880px) {
+        .product-card {
+            width: 60%;
+            height: 100%;
+        }
+
+        .break {
+            display: block;
+        }
+    }
+</style>
