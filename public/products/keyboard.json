@@ -1,69 +1,90 @@
 {
-    "razer": {
-      "blackwidow": {
-        "name": "Razer BlackWidow V3 Pro",
-        "description": "The Razer BlackWidow V3 Pro is the ultimate gaming keyboard featuring Razer HyperSpeed Wireless technology for ultra-fast wireless performance. Dominate your opponents with Razer Mechanical Switches and customizable Chroma RGB lighting.",
-        "image": "https://assets3.razerzone.com/images/pnx.assets/55d5deab39ee36dc8f661435af09b7be/razer-blackwidow-v3-pro-500x500.png",
-        "original-price": "229,99 €",
-        "offert-price": "199,99 €",
-        "type": "keyboard",
-        "brand": "Razer",
-        "page": "/products/keyboard/blackwidow"
-      },
-      "huntsman": {
-        "name": "Razer Huntsman V2 Analog",
-        "description": "Experience the evolution of gaming keyboards with the Razer Huntsman V2 Analog. Featuring Analog Optical Switches, customizable actuation, and unmatched responsiveness, this is the ultimate keyboard for gamers seeking total control.",
-        "image": "https://assets3.razerzone.com/images/pnx.assets/b305c1240667cdaf1820ed22f96d5d45/razer-huntsman-v2-analog-500x500.png",
-        "original-price": "249,99 €",
-        "offert-price": "229,99 €",
-        "type": "keyboard",
-        "brand": "Razer",
-        "page": "/products/keyboard/huntsman"
-      }
+  "razer": {
+    "blackwidow": {
+      "name": "Razer BlackWidow V3 Pro",
+      "description": "The Razer BlackWidow V3 Pro is the ultimate gaming keyboard featuring Razer HyperSpeed Wireless technology for ultra-fast wireless performance. Dominate your opponents with Razer Mechanical Switches and customizable Chroma RGB lighting.",
+      "image": "https://assets3.razerzone.com/HSeWjT_RRqYOAsgSV5TUtNxjtRw=/1500x1000/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh93%2Fh45%2F9662065344542%2F230921-huntsman-v3-pro-1500x1000-3.jpg",
+      "original-price": "229,99 €",
+      "offert-price": "199,99 €",
+      "type": "keyboard",
+      "brand": "Razer",
+      "page": "/products/keyboard/blackwidow"
     },
-    "logitech": {
-      "gpro": {
-        "name": "Logitech G PRO X Mechanical Gaming Keyboard",
-        "description": "Designed and built to the exacting standards of professional gamers, the Logitech G PRO X Mechanical Gaming Keyboard is made for competition. With swappable pro-grade switches, customizable RGB lighting, and a compact tenkeyless design, it's the ultimate keyboard for esports.",
-        "image": "https://resource.logitechg.com/w_480,c_lpad,ar_4:3,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-x-mechanical-gaming-keyboard/pro-x-hero-main.png?v=1",
-        "original-price": "149,00 €",
-        "offert-price": "129,99 €",
-        "type": "keyboard",
-        "brand": "Logitech",
-        "page": "/products/keyboard/gpro"
-      },
-      "g513": {
-        "name": "Logitech G513 Carbon LIGHTSYNC RGB Mechanical Gaming Keyboard",
-        "description": "The Logitech G513 Carbon is a high-performance mechanical gaming keyboard with customizable RGB lighting and advanced features like LIGHTSYNC technology and programmable macro keys. Dominate the competition with precision and style.",
-        "image": "https://resource.logitechg.com/w_480,c_lpad,ar_4:3,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/g513-rgb-mechanical-gaming-keyboard/g513-carbon-gallery-4.png?v=1",
-        "original-price": "159,00 €",
-        "offert-price": "139,99 €",
-        "type": "keyboard",
-        "brand": "Logitech",
-        "page": "/products/keyboard/g513"
-      }
+    "huntsman": {
+      "name": "Razer Huntsman V2 Analog",
+      "description": "Experience the evolution of gaming keyboards with the Razer Huntsman V2 Analog. Featuring Analog Optical Switches, customizable actuation, and unmatched responsiveness, this is the ultimate keyboard for gamers seeking total control.",
+      "image": "https://assets3.razerzone.com/fV7qvwe6--8mgqkwp58GZQCl3k4=/1500x1000/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh0f%2Fhaf%2F9143289970718%2Fhuntsman-v2-analog-1500x1000-20210204-05.jpg",
+      "original-price": "249,99 €",
+      "offert-price": "229,99 €",
+      "type": "keyboard",
+      "brand": "Razer",
+      "page": "/products/keyboard/huntsman"
     },
-    "corsair": {
-      "k95": {
-        "name": "Corsair K95 RGB PLATINUM XT Mechanical Gaming Keyboard",
-        "description": "The Corsair K95 RGB PLATINUM XT is a full-size mechanical gaming keyboard with Cherry MX switches, customizable RGB lighting, and dedicated macro keys. Elevate your gaming experience with precision and performance.",
-        "image": "https://www.corsair.com/medias/sys_master/images/images/h77/hdb/9056898302494/-CH-9127411-NA-Gallery-K95RGBPlatXT-1.png",
-        "original-price": "199,99 €",
-        "offert-price": "179,99 €",
-        "type": "keyboard",
-        "brand": "Corsair",
-        "page": "/products/keyboard/k95"
-      },
-      "k70": {
-        "name": "Corsair K70 RGB MK.2 Mechanical Gaming Keyboard",
-        "description": "The Corsair K70 RGB MK.2 is a premium mechanical gaming keyboard with Cherry MX switches, customizable RGB backlighting, and a durable aluminum frame. Dominate the battlefield with style and precision.",
-        "image": "https://www.corsair.com/medias/sys_master/images/images/hdd/hf0/9066574122526/K70-RGB-MK-2-01.png",
-        "original-price": "169,99 €",
-        "offert-price": "149,99 €",
-        "type": "keyboard",
-        "brand": "Corsair",
-        "page": "/products/keyboard/k70"
-      }
+    "deathstalker": {
+      "deathstalker": "Razer DeathStalker V2",
+      "description": "Elevate your gaming experience with the Razer DeathStalker V2. Boasting advanced membrane switches, customizable backlighting, and a sleek design, this keyboard offers precision and style for every gamer. Dominate the virtual battlefield and immerse yourself in the action with the DeathStalker V2.",
+      "image": "https://assets3.razerzone.com/SIa0aH3oDxwaAD6mL7NQlKX52hA=/1500x1000/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh75%2Fh89%2F9422672232478%2F220726-deathstalker-v2-1500x1000-3.jpg",
+      "original-price": "199,99 €",
+      "offert-price": "189,99 €",
+      "type": "keyboard",
+      "brand": "Razer",
+      "page": "/products/keyboard/deathstalker"
+    }
+  },
+  "logitech": {
+    "gpro": {
+      "name": "Logitech G PRO X",
+      "description": "Designed and built to the exacting standards of professional gamers, the Logitech G PRO X Mechanical Gaming Keyboard is made for competition. With swappable pro-grade switches, customizable RGB lighting, and a compact tenkeyless design, it's the ultimate keyboard for esports.",
+      "image": "https://resource.logitech.com/content/dam/gaming/en/products/pro-x-keyboard/pro-x-keyboard-gallery-1.png",
+      "original-price": "149,00 €",
+      "offert-price": "129,99 €",
+      "type": "keyboard",
+      "brand": "Logitech",
+      "page": "/products/keyboard/gpro"
+    },
+    "g513": {
+      "name": "Logitech G513 Carbon LIGHTSYNC RGB",
+      "description": "The Logitech G513 Carbon is a high-performance mechanical gaming keyboard with customizable RGB lighting and advanced features like LIGHTSYNC technology and programmable macro keys. Dominate the competition with precision and style.",
+      "image": "https://m.media-amazon.com/images/I/618oJuA-M2S._AC_UF894,1000_QL80_DpWeblab_.jpg",
+      "original-price": "159,00 €",
+      "offert-price": "139,99 €",
+      "type": "keyboard",
+      "brand": "Logitech",
+      "page": "/products/keyboard/g513"
+    },
+    "g910": {
+      "name": "Logitech G910 Orion Spectrum RGB",
+      "description": "Experience the pinnacle of gaming keyboards with the Logitech G910 Orion Spectrum RGB Mechanical Gaming Keyboard. Featuring Romer-G mechanical switches, customizable RGB lighting, and dedicated media controls, it offers precision and style for every gamer.",
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5053/5053501_sd.jpg",
+      "original-price": "179.99 €",
+      "offer-price": "159.99 €",
+      "type": "keyboard",
+      "brand": "Logitech",
+      "page": "/products/keyboard/g910"
+    }
+  },
+  "ducky": {
+    "blackwidow": {
+      "name": "Razer BlackWidow V3 Pro",
+      "description": "The Razer BlackWidow V3 Pro is the ultimate gaming keyboard featuring Razer HyperSpeed Wireless technology for ultra-fast wireless performance. Dominate your opponents with Razer Mechanical Switches and customizable Chroma RGB lighting.",
+      "image": "https://assets3.razerzone.com/HSeWjT_RRqYOAsgSV5TUtNxjtRw=/1500x1000/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh93%2Fh45%2F9662065344542%2F230921-huntsman-v3-pro-1500x1000-3.jpg",
+      "original-price": "249,99 €",
+      "offert-price": "209,99 €",
+      "type": "keyboard",
+      "brand": "Razer",
+      "page": "/products/keyboard/blackwidow"
+    },
+    "huntsman": {
+      "name": "Razer Huntsman V2 Analog",
+      "description": "Experience the evolution of gaming keyboards with the Razer Huntsman V2 Analog. Featuring Analog Optical Switches, customizable actuation, and unmatched responsiveness, this is the ultimate keyboard for gamers seeking total control.",
+      "image": "https://assets3.razerzone.com/images/pnx.assets/b305c1240667cdaf1820ed22f96d5d45/razer-huntsman-v2-analog-500x500.png",
+      "original-price": "249,99 €",
+      "offert-price": "229,99 €",
+      "type": "keyboard",
+      "brand": "Razer",
+      "page": "/products/keyboard/huntsman"
     }
   }
+}
+
   
