@@ -35,7 +35,7 @@
         "ninjafxhayate": {
             "name": "Ninja FX Hayate KOU",
             "description": "Higher version of Hien. HAYATE OTSU is enables more stable gliding and more precise pointing. The Up and down motion of the mouse during mouse movement is less than that of HIEN.",
-            "image": "https://www.artisan-jp.com/artisan/img/pad/fx/fx_hayate_kou.jpg",
+            "image": "../hayate_kou.png",
             "original-price": "89,99 €",
             "offert-price": "84,99 €",
             "type": "mousepad",
@@ -45,7 +45,7 @@
         "ninjafxzero": {
             "name": "Ninja FX Zero",
             "description": "A feeling of operation resembles to Qck. However, a sharper operation feeling with a lighter glide than that. Rapidly rising in popularity now.",
-            "image": "https://www.artisan-jp.com/artisan/img/pad/fx/fx_zero_daidai_top.jpg",
+            "image": "../fxzero.png",
             "original-price": "69,99 €",
             "offert-price": "64,99 €",
             "type": "mousepad",
@@ -55,7 +55,7 @@
         "ninjafxraiden": {
           "name": "Ninja FX Raiden",
           "description": "Fabrics densely knitted with thin thread realize a quick glide that can not be thought of as cloth. And a smooth slide. mouse pad of silky touch.",
-          "image": "https://www.artisan-jp.com/artisan/img/pad/fx/fx_raiden.jpg",
+          "image": "../fxraiden.png",
           "original-price": "74,99 €",
           "offert-price": "69,99 €",
           "type": "mousepad",
