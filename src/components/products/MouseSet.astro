@@ -7,6 +7,62 @@ const { prox, g705, shroud } = logitech;
 const { ec2c, ec2v2white, za12c } = zowie;
 ---
 
+<h2>ZOWIE</h2>
+<section class="brand-products">
+    <Product
+        name={ec2c.name}
+        description={ec2c.description}
+        image={ec2c.image}
+        originalPrice={ec2c["original-price"]}
+        offertPrice={ec2c["offert-price"]}
+        page={ec2c.page}
+    />
+    <Product
+        name={ec2v2white.name}
+        description={ec2v2white.description}
+        image={ec2v2white.image}
+        originalPrice={ec2v2white["original-price"]}
+        offertPrice={ec2v2white["offert-price"]}
+        page={ec2v2white.page}
+    />
+    <Product
+        name={za12c.name}
+        description={za12c.description}
+        image={za12c.image}
+        originalPrice={za12c["original-price"]}
+        offertPrice={za12c["offert-price"]}
+        page={za12c.page}
+    />
+</section>
+
+<h2>LOGITECH</h2>
+<section class="brand-products">
+    <Product
+        name={prox.name}
+        description={prox.description}
+        image={prox.image}
+        originalPrice={prox["original-price"]}
+        offertPrice={prox["offert-price"]}
+        page={prox.page}
+    />
+    <Product
+        name={g705.name}
+        description={g705.description}
+        image={g705.image}
+        originalPrice={g705["original-price"]}
+        offertPrice={g705["offert-price"]}
+        page={g705.page}
+    />
+    <Product
+        name={shroud.name}
+        description={shroud.description}
+        image={shroud.image}
+        originalPrice={shroud["original-price"]}
+        offertPrice={shroud["offert-price"]}
+        page={shroud.page}
+    />
+</section>
+
 <h2>RAZER</h2>
 <section class="brand-products">
     <Product
@@ -15,7 +71,6 @@ const { ec2c, ec2v2white, za12c } = zowie;
         image={basilisk.image}
         originalPrice={basilisk["original-price"]}
         offertPrice={basilisk["offert-price"]}
-        brand={basilisk.brand}
         page={basilisk.page}
     />
     <Product
@@ -24,7 +79,6 @@ const { ec2c, ec2v2white, za12c } = zowie;
         image={deathadder.image}
         originalPrice={deathadder["original-price"]}
         offertPrice={deathadder["offert-price"]}
-        brand={deathadder.brand}
         page={deathadder.page}
     />
     <Product
@@ -33,13 +87,19 @@ const { ec2c, ec2v2white, za12c } = zowie;
         image={viper.image}
         originalPrice={viper["original-price"]}
         offertPrice={viper["offert-price"]}
-        brand={viper.brand}
         page={viper.page}
     />
 </section>
 <!-- LOGITECH --><!-- three articles --><!-- ZOWIE --><!-- three articles -->
 
 <style>
+    h2 {
+        text-align: center;
+        font-size: 3rem;
+        color: #ddd;
+        text-shadow: 2px 2px #00d36b;
+    }
+
     .brand-products {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

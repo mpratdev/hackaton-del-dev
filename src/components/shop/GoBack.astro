@@ -1,0 +1,38 @@
+---
+interface Props {
+    text?: string;
+}
+
+const { text } = Astro.props;
+---
+
+<a href="/shop">
+    <div>
+        ←
+        {text && <p>Go Back</p>}
+    </div>
+</a>
+
+<style>
+    div {
+        width: 120px;
+        background: #f00;
+        font-size: 1rem;
+        box-shadow: 2px 2px #000;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        color: #ddd;
+        font-weight: bold;
+        justify-content: center;
+        margin: auto;
+        margin-top: 25px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    p {
+        margin-left: 10px;
+    }
+</style>

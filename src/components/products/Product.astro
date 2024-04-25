@@ -1,7 +1,6 @@
 ---
 import More from "../buttons/More.astro";
 import AddToCart from "../buttons/AddToCart.astro";
-import BrandBanner from "../home/BrandBanner.astro";
 
 interface Props {
     name: string;
@@ -9,11 +8,10 @@ interface Props {
     image: string;
     originalPrice: string;
     offertPrice: string;
-    brand: string;
     page: string;
 }
 
-const { name, description, image, originalPrice, offertPrice, brand, page } =
+const { name, description, image, originalPrice, offertPrice, page } =
     Astro.props;
 ---
 
@@ -26,7 +24,11 @@ const { name, description, image, originalPrice, offertPrice, brand, page } =
         <p class="description">
             {description}
         </p>
-        <BrandBanner brand={brand} />
+        <div class="price">
+            <p class="offert-price">
+                {offertPrice}<span class="original-price">{originalPrice}</span>
+            </p>
+        </div>
         <div class="buttons">
             <More href={page} />
             <AddToCart />
@@ -39,11 +41,9 @@ const { name, description, image, originalPrice, offertPrice, brand, page } =
     .product-card {
         width: 90%;
         height: 100%;
-        background: linear-gradient(#ddd, #232323);
         margin: auto;
         border-radius: 12px;
         box-sizing: border-box;
-        box-shadow: 0px 0px 15px -10px #ddd;
         padding-bottom: 30px;
     }
 
@@ -79,6 +79,19 @@ const { name, description, image, originalPrice, offertPrice, brand, page } =
 
     .break {
         display: none;
+    }
+
+    .offert-price {
+        color: #ddd;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .original-price {
+        color: #f00;
+        text-decoration: line-through;
+        font-size: 1rem;
+        margin-left: 20px;
     }
 
     @media screen and (max-width: 880px) {
