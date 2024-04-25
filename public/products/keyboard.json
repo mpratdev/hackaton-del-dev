@@ -64,25 +64,35 @@
     }
   },
   "ducky": {
-    "blackwidow": {
-      "name": "Razer BlackWidow V3 Pro",
-      "description": "The Razer BlackWidow V3 Pro is the ultimate gaming keyboard featuring Razer HyperSpeed Wireless technology for ultra-fast wireless performance. Dominate your opponents with Razer Mechanical Switches and customizable Chroma RGB lighting.",
-      "image": "https://assets3.razerzone.com/HSeWjT_RRqYOAsgSV5TUtNxjtRw=/1500x1000/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh93%2Fh45%2F9662065344542%2F230921-huntsman-v3-pro-1500x1000-3.jpg",
-      "original-price": "249,99 €",
-      "offert-price": "209,99 €",
+    "one2mini": {
+      "name": "Ducky One 2 Mini",
+      "description": "Dual color bezels to match all varieties of keycaps colorways Features Cherry MX key switches.",
+      "image": "https://www.duckychannel.com.tw/upload/2019_05_112/20190511120502dgnhbl7NU1.png",
+      "original-price": "129,99 €",
+      "offert-price": "109,99 €",
       "type": "keyboard",
-      "brand": "Razer",
-      "page": "/products/keyboard/blackwidow"
+      "brand": "Ducky",
+      "page": "/products/keyboard/one2mini"
     },
-    "huntsman": {
-      "name": "Razer Huntsman V2 Analog",
-      "description": "Experience the evolution of gaming keyboards with the Razer Huntsman V2 Analog. Featuring Analog Optical Switches, customizable actuation, and unmatched responsiveness, this is the ultimate keyboard for gamers seeking total control.",
-      "image": "https://assets3.razerzone.com/images/pnx.assets/b305c1240667cdaf1820ed22f96d5d45/razer-huntsman-v2-analog-500x500.png",
-      "original-price": "249,99 €",
-      "offert-price": "229,99 €",
+    "originvintage": {
+      "name": "Ducky Origin Vintage",
+      "description": "The Origin pays tribute to Ducky's roots, where it all began. Our aim was to journey back in time and capture the essence of the original typing experience while infusing it with new innovations.",
+      "image": "https://www.duckychannel.com.tw/upload/2023_11_102/20231110093149eochsc9vo8.png",
+      "original-price": "99,99 €",
+      "offert-price": "89,99 €",
       "type": "keyboard",
-      "brand": "Razer",
-      "page": "/products/keyboard/huntsman"
+      "brand": "Ducky",
+      "page": "/products/keyboard/originvintage"
+    },
+    "outlaw65": {
+      "name": "Ducky Outlaw 65",
+      "description": "Break free from the constraints",
+      "image": "https://www.duckychannel.com.tw/upload/2023_10_042/202310041513033u0ldhlQR6.png",
+      "original-price": "99,99 €",
+      "offert-price": "89,99 €",
+      "type": "keyboard",
+      "brand": "Ducky",
+      "page": "/products/keyboard/outlaw65"
     }
   }
 }
