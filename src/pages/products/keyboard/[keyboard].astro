@@ -1,0 +1,167 @@
+---
+import {
+    razer,
+    logitech,
+    ducky,
+} from "./keyboard.json";
+
+const { blackwidow, deathstalker, huntsman } = razer;
+const { gpro, g513, g910 } = logitech;
+const { one2mini, originvintage, outlaw65 } = ducky;
+
+export async function getStaticPaths() {
+    const pages = [
+        {
+            pageName: blackwidow.name,
+            name: blackwidow.name,
+            description: blackwidow.description,
+            image: blackwidow.image,
+            originalPrice: blackwidow["original-price"],
+            offertPrice: blackwidow["offert-price"],
+            brand: blackwidow.brand,
+            type: blackwidow.type,
+        },
+        {
+            pageName: deathstalker.name,
+            name: deathstalker.name,
+            description: deathstalker.description,
+            image: deathstalker.image,
+            originalPrice: deathstalker["original-price"],
+            offertPrice: deathstalker["offert-price"],
+            brand: deathstalker.brand,
+            type: deathstalker.type,
+        },
+        {
+            pageName: huntsman.name,
+            name: huntsman.name,
+            description: huntsman.description,
+            image: huntsman.image,
+            originalPrice: huntsman["original-price"],
+            offertPrice: huntsman["offert-price"],
+            brand: huntsman.brand,
+            type: huntsman.type,
+        },
+        {
+            pageName: gpro.name,
+            name: gpro.name,
+            description: gpro.description,
+            image: gpro.image,
+            originalPrice: gpro["original-price"],
+            offertPrice: gpro["offert-price"],
+            brand: gpro.brand,
+            type: gpro.type,
+        },
+        {
+            pageName: g513.name,
+            name: g513.name,
+            description: g513.description,
+            image: g513.image,
+            originalPrice: g513["original-price"],
+            offertPrice: g513["offert-price"],
+            brand: g513.brand,
+            type: g513.type,
+        },
+        {
+            pageName: g910.name,
+            name: g910.name,
+            description: g910.description,
+            image: g910.image,
+            originalPrice: g910["original-price"],
+            offertPrice: g910["offer-price"],
+            brand: g910.brand,
+            type: g910.type,
+        }
+    ];
+    return pages.map(({ pageName, name, description, image, originalPrice, offertPrice, brand, type }) => {
+        return {
+        params: { pageName },
+        props: { name, description, image, originalPrice, offertPrice, brand, type },
+        };
+    });
+}
+
+const { pageName } = Astro.params;
+const { name, description, image, originalPrice, offertPrice, brand, type } =
+    Astro.props;
+---
+
+<div class="product-card">
+    <img src={image} />
+    <div class="information">
+        <h3 class="name">{name}</h3>
+        <p class="description">
+            {description}
+        </p>
+        <div>{brand}</div>
+        <div>{type}</div>
+        <div class="price">
+            <p class="offert-price">
+                {offertPrice}<span class="original-price">{originalPrice}</span>
+            </p>
+        </div>
+    </div>
+</div>
+<br class="break" />
+
+<style>
+    .product-card {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        border-radius: 12px;
+        box-sizing: border-box;
+        padding-bottom: 30px;
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: 0;
+        border-radius: 12px;
+    }
+
+    .information {
+        padding: 5px 24px;
+        text-align: left;
+    }
+
+    .name {
+        color: #e1ff91;
+    }
+
+    .description {
+        color: #ccc;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* number of lines to show */
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+
+    .break {
+        display: none;
+    }
+
+    .offert-price {
+        color: #ddd;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .original-price {
+        color: #f00;
+        text-decoration: line-through;
+        font-size: 1rem;
+        margin-left: 20px;
+    }
+
+    @media screen and (max-width: 880px) {
+        .product-card {
+            width: 60%;
+            height: 100%;
+        }
+
+        .break {
+            display: block;
+        }
+    }
+</style>
