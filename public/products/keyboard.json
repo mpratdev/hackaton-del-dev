@@ -3,7 +3,7 @@
     "blackwidow": {
       "name": "Razer BlackWidow V3 Pro",
       "description": "The Razer BlackWidow V3 Pro is the ultimate gaming keyboard featuring Razer HyperSpeed Wireless technology for ultra-fast wireless performance. Dominate your opponents with Razer Mechanical Switches and customizable Chroma RGB lighting.",
-      "image": "../blackwidowv3.png",
+      "image": "/blackwidowv3.png",
       "original-price": "229,99 €",
       "offert-price": "199,99 €",
       "type": "keyboard",
@@ -13,7 +13,7 @@
     "huntsman": {
       "name": "Razer Huntsman V2 Analog",
       "description": "Experience the evolution of gaming keyboards with the Razer Huntsman V2 Analog. Featuring Analog Optical Switches, customizable actuation, and unmatched responsiveness, this is the ultimate keyboard for gamers seeking total control.",
-      "image": "../analog.png",
+      "image": "/analog.png",
       "original-price": "249,99 €",
       "offert-price": "229,99 €",
       "type": "keyboard",
@@ -23,7 +23,7 @@
     "deathstalker": {
       "name": "Razer DeathStalker V2",
       "description": "Elevate your gaming experience with the Razer DeathStalker V2. Boasting advanced membrane switches, customizable backlighting, and a sleek design, this keyboard offers precision and style for every gamer. Dominate the virtual battlefield and immerse yourself in the action with the DeathStalker V2.",
-      "image": "../deathstalker.png",
+      "image": "/deathstalker.png",
       "original-price": "199,99 €",
       "offert-price": "189,99 €",
       "type": "keyboard",

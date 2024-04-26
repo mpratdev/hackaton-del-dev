@@ -1,107 +1,40 @@
 ---
-import {
-    razer,
-    logitech,
-    ducky,
-} from "./keyboard.json";
-
-const { blackwidow, deathstalker, huntsman } = razer;
-const { gpro, g513, g910 } = logitech;
-const { one2mini, originvintage, outlaw65 } = ducky;
+import Layout from "../../../layouts/Layout.astro";
+import { pages } from "./keyboard"
 
 export async function getStaticPaths() {
-    const pages = [
-        {
-            pageName: blackwidow.name,
-            name: blackwidow.name,
-            description: blackwidow.description,
-            image: blackwidow.image,
-            originalPrice: blackwidow["original-price"],
-            offertPrice: blackwidow["offert-price"],
-            brand: blackwidow.brand,
-            type: blackwidow.type,
-        },
-        {
-            pageName: deathstalker.name,
-            name: deathstalker.name,
-            description: deathstalker.description,
-            image: deathstalker.image,
-            originalPrice: deathstalker["original-price"],
-            offertPrice: deathstalker["offert-price"],
-            brand: deathstalker.brand,
-            type: deathstalker.type,
-        },
-        {
-            pageName: huntsman.name,
-            name: huntsman.name,
-            description: huntsman.description,
-            image: huntsman.image,
-            originalPrice: huntsman["original-price"],
-            offertPrice: huntsman["offert-price"],
-            brand: huntsman.brand,
-            type: huntsman.type,
-        },
-        {
-            pageName: gpro.name,
-            name: gpro.name,
-            description: gpro.description,
-            image: gpro.image,
-            originalPrice: gpro["original-price"],
-            offertPrice: gpro["offert-price"],
-            brand: gpro.brand,
-            type: gpro.type,
-        },
-        {
-            pageName: g513.name,
-            name: g513.name,
-            description: g513.description,
-            image: g513.image,
-            originalPrice: g513["original-price"],
-            offertPrice: g513["offert-price"],
-            brand: g513.brand,
-            type: g513.type,
-        },
-        {
-            pageName: g910.name,
-            name: g910.name,
-            description: g910.description,
-            image: g910.image,
-            originalPrice: g910["original-price"],
-            offertPrice: g910["offer-price"],
-            brand: g910.brand,
-            type: g910.type,
-        }
-    ];
-    return pages.map(({ pageName, name, description, image, originalPrice, offertPrice, brand, type }) => {
+    return pages.map(({ keyboard, name, description, image, originalPrice, offertPrice, brand, type }) => {
         return {
-        params: { pageName },
+        params: { keyboard },
         props: { name, description, image, originalPrice, offertPrice, brand, type },
         };
     });
 }
 
-const { pageName } = Astro.params;
+const { keyboard } = Astro.params;
 const { name, description, image, originalPrice, offertPrice, brand, type } =
     Astro.props;
 ---
 
-<div class="product-card">
-    <img src={image} />
-    <div class="information">
-        <h3 class="name">{name}</h3>
-        <p class="description">
-            {description}
-        </p>
-        <div>{brand}</div>
-        <div>{type}</div>
-        <div class="price">
-            <p class="offert-price">
-                {offertPrice}<span class="original-price">{originalPrice}</span>
+<Layout title=`Kiwi | Keyboard - ${name}`>
+    <div class="product-card">
+        <img src={image} />
+        <div class="information">
+            <h3 class="name">{name}</h3>
+            <p class="description">
+                {description}
             </p>
+            <div>{brand}</div>
+            <div>{type}</div>
+            <div class="price">
+                <p class="offert-price">
+                    {offertPrice}<span class="original-price">{originalPrice}</span>
+                </p>
+            </div>
         </div>
     </div>
-</div>
-<br class="break" />
+    <br class="break" />
+</Layout>
 
 <style>
     .product-card {
