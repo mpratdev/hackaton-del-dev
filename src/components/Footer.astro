@@ -138,3 +138,26 @@ const year = new Date().getFullYear();
         }
     }
 </style>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const main = document.querySelector('main');
+        const footer = document.querySelector('footer');
+
+        const adjustFooterPosition = () => {
+            const windowHeight = window.innerHeight;
+            const mainHeight = main?.offsetHeight;
+
+            if (mainHeight < windowHeight) {
+                footer.style.position = 'fixed';
+                footer.style.bottom = '0';
+            } else {
+                footer.style.position = 'absolute';
+            }
+        };
+
+        adjustFooterPosition();
+
+        window.addEventListener('resize', adjustFooterPosition);
+    });
+</script>
