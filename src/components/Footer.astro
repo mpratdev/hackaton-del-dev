@@ -17,6 +17,10 @@ const year = new Date().getFullYear();
     <div class="content">
         <PageInfo>
             <a class="page-anchor" href="/">home</a>
+            <ul>
+                <li>top products</li>
+                <li>greetings</li>
+            </ul>
         </PageInfo>
         <PageInfo>
             <a class="page-anchor" href="/shop">shop</a>
@@ -28,15 +32,30 @@ const year = new Date().getFullYear();
         </PageInfo>
         <PageInfo>
             <a class="page-anchor" href="/kiwipro">kiwiPro</a>
+            <ul>
+                <li>Working...</li>
+            </ul>
         </PageInfo>
         <PageInfo>
             <a class="page-anchor" href="/news">news</a>
+            <ul>
+                <li><a href="/products/keyboard">keyboard</a></li>
+                <li><a href="/products/mouse">mouse</a></li>
+                <li><a href="/products/mousepad">mousepad</a></li>
+            </ul>
         </PageInfo>
         <PageInfo>
             <a class="page-anchor" href="/about">about us</a>
+            <ul>
+                <li>history</li>
+                <li>team</li>
+            </ul>
         </PageInfo>
         <PageInfo>
             <a class="page-anchor" href="/support">support</a>
+            <ul>
+                <li>contact us</li>
+            </ul>
         </PageInfo>
     </div>
 
@@ -63,8 +82,12 @@ const year = new Date().getFullYear();
         padding: 0;
     }
 
-    ul li a {
+    ul li a, ul li {
         color: #999;
+    }
+
+    ul li a {
+        text-decoration: underline;
     }
 
     .left-content {

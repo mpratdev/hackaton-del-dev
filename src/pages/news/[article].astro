@@ -1,0 +1,123 @@
+---
+import { pages } from "./news"
+
+export async function getStaticPaths() {
+    return pages.map(({ keyboard, name, description, image, originalPrice, offertPrice, brand, type }) => {
+        return {
+        params: { keyboard },
+        props: { name, description, image, originalPrice, offertPrice, brand, type },
+        };
+    });
+}
+
+const { keyboard } = Astro.params;
+const { name, description, image, originalPrice, offertPrice, brand, type } =
+    Astro.props;
+---
+
+<Layout title=`Kiwi | Keyboard - ${name}`>
+    <section class="product">
+        <div class="image">
+            <img src={image} />
+        </div>
+        <div class="information">
+            <div class="brand-type info-item">
+                <BrandBanner brand={brand} margin="yes" />
+                <BrandBanner brand={type} />
+            </div>
+            <h3 class="name info-item">{name}</h3>
+            <p class="description info-item">
+                {description}
+            </p>
+            <div class="price info-item">
+                <p class="offert-price">
+                    {offertPrice}<span class="original-price">{originalPrice}</span>
+                </p>
+            </div>
+            <div class="buttons">
+                <Buy />
+                <AddToCart product="yes"/>
+            </div>
+        </div>
+    </section>
+    <br class="break" />
+    <GoBack text="yes"/>
+    <WhyToBuy />
+</Layout>
+
+<style>
+    .product {
+        display: grid;
+        grid-template-columns: 1.5fr 1.5fr;
+        height: 80vh;
+        background: #232323;
+        padding: 15px;
+        border-radius: 12px;
+    }
+
+    .info-item {
+        color: #ddd;
+        padding: 10px 30px;
+    }
+
+    .image {
+    }
+
+    img {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .name {
+        color: #B6E98B;
+        font-size: 2.3rem;
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+
+    .description {
+        font-size: 1.5rem;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    .brand-type {
+        display: flex;
+        margin-top: 60px;
+        margin-bottom: 0;
+    }
+
+    .buttons {
+        padding-left: 30px;
+    }
+
+    .offert-price {
+        color: #ddd;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .original-price {
+        color: #f00;
+        text-decoration: line-through;
+        font-size: 1.5rem;
+        margin-left: 20px;
+    }
+
+    @media screen and (max-width: 1050px) {
+        .product {
+            grid-template-columns: 1fr;
+            height: auto;
+            padding-bottom: 30px;
+        }
+
+        .offert-price {
+            font-size: 1.6rem;
+        }
+
+        .original-price {
+            font-size: 1.1rem;
+        }
+    }
+</style>

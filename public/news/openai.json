@@ -1,0 +1,26 @@
+{
+    "openai": {
+        "title": "OpenAI Startup Fund quietly raises $15M",
+        "description": "Discover how the OpenAI Startup Fund has quietly raised $15 million in funds to support early-stage companies, primarily focused on artificial intelligence. Learn how this fund, managed by Ian Hathaway, has closed its second round of funding through a special purpose vehicle, backing innovative companies in areas such as education, law, and sciences. Explore the background of the fund, its portfolio of companies, and its recent leadership change, as it continues to support promising startups in the technology field.",
+        "author": "Kyle Wiggers",
+        "category": "AI",
+        "publication_date": "April 26, 2024, 5:21 PM GMT+2",
+        "source": "https://techcrunch.com/2024/04/26/openai-startup-fund-quietly-raises-15m/?guccounter=1",
+        "content": [
+        {
+            "paragraphs": [
+            "The OpenAI Startup Fund, a venture fund related to — but technically separate from — OpenAI that invests in early-stage, typically AI-related companies across education, law and the sciences, has quietly closed a $15 million tranche.",
+            "According to a filing with the U.S. Securities and Exchange Commission, two unnamed investors contributed the $15 million in new cash on or around April 19. The paperwork was submitted on April 25, and mentions Ian Hathaway, the OpenAI Startup Fund’s manager and sole partner.",
+            "The capital was transferred to a legal entity called a special purpose vehicle, or SPV, associated with the OpenAI Startup Fund: OpenAI Startup Fund SPV II, L.P.",
+            "SPVs allow multiple investors to pool their resources and make an investment in a single company or fund. In the VC sector, they’re sometimes used to invest in startups that don’t fit a fund’s strategy or that fall outside a fund’s terms. SPVs can also be marketed to a wider range of non-institutional investors.",
+            "It’s the second such time the OpenAI Startup Fund has raised capital through an SPV — the first time being in February for a $10 million tranche.",
+            "The OpenAI Startup Fund, whose portfolio companies include legal tech startup Harvey, Ambiance Healthcare and humanoid robotics firm Figure AI, came under scrutiny last year after it was revealed that OpenAI CEO Sam Altman had long legally controlled the fund. While marketed like a standard corporate venture arm, Altman raised capital for the OpenAI Startup Fund from outside limited partners, including Microsoft (a close OpenAI partner and investor), and had the final say in the fund’s investments.",
+            "Neither OpenAI nor Altman had — or have — a financial interest in the OpenAI Startup Fund. But critics nonetheless argued that Altman’s ownership amounted to a conflict of interest; OpenAI claimed that the general partner structure was intended to be “temporary.”",
+            "In April, Altman transferred formal control of the OpenAI Startup Fund to Hathaway, previously an investor with the VC firm Haystack, who’d played a key role in managing the Startup Fund since 2021.",
+            "As of last year, the OpenAI Startup Fund — whose ventures also include an incubator program called Converge — had $175 million in commitments and held $325 million in gross net asset value. It has backed well over a dozen startups, including Descript, a collaborative multimedia editing platform valued at $553 million last year; language learning app Speak; AI-powered note-taking app Mem; and IDE platform Anysphere.",
+            "OpenAI hadn’t responded to TechCrunch’s request for comment as of publication time. We’ll update this post if we hear back."
+            ]
+        }
+        ]
+    }
+}
