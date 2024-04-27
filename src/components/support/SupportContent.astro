@@ -1,0 +1,85 @@
+---
+import Contact from "./Contact.astro"
+---
+
+<section class="support-content">
+    <h1>Welcome to Kiwi Support</h1>
+    <p>At Kiwi, we take pride in providing quality electronic products along with exceptional service. We understand that every purchase is important to you, which is why we are here to support you every step of the way.</p>
+    <br>
+    <p>Our support team is committed to offering you the best experience possible. Whether you need help setting up your device, have questions about how our products work, or require technical assistance, we're here to help.</p>
+    <br>
+    <p>How can we assist you?</p>
+    <ul>
+        <li><span style="font-weight: bold;">FAQS</span>: Check out our <a href="/faqs">Frequently Asked Questions</a> section for quick answers to common inquiries.</li>
+        <li><span style="font-weight: bold;">Direct Contact</span>: If you need personalized assistance, our support team is available to assist you by phone or email.</li>
+        <li><span style="font-weight: bold;">Warrantly and Returns</span>: We are committed to your satisfaction. If for any reason you are not completely satisfied with your purchase, please refer to our warranty and returns policy for more information.</li>
+    </ul>
+    <br>
+    <p>At Kiwi, your satisfaction is our number one priority. Trust us to provide you with the support you need to fully enjoy your electronic products. Thank you for choosing Kiwi!</p>
+    <br>
+
+    <h2>Contact Us</h2>
+    <section class="methods">
+        <Contact 
+            method="phone" 
+            contact="+34 623-266-973"
+            schedule="9a.m. - 9p.m. ET, Monday to Friday."
+            text="You can contact via WhatsUpp text message or phone call."
+        />
+        <br id="break" />
+        <Contact 
+            method="email" 
+            contact="mpratmaya@gmail.com"
+            schedule="24 / 7 Monday to Sunday."
+            text="Permanent assistency via email."
+        />
+    </section>
+</section>
+
+<style>
+    .methods {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .support-content {
+        color: #ddd;
+    }
+
+    h1, h2 {
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        color: #B6E98C;
+        text-shadow: 5px 5px #17210f;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    p, li {
+        font-size: 1.5rem;
+        text-wrap: pretty;
+    }
+
+    #break {
+        display: none;
+    }
+
+    @media screen and (max-width: 1050px) {
+        .methods {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        #break {
+            display: block;
+        }
+    }
+
+    a {
+        color: #B6E98C;
+    }
+</style>

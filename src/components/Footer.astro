@@ -20,6 +20,11 @@ const year = new Date().getFullYear();
         </PageInfo>
         <PageInfo>
             <a class="page-anchor" href="/shop">shop</a>
+            <ul>
+                <li><a href="/products/keyboard">keyboard</a></li>
+                <li><a href="/products/mouse">mouse</a></li>
+                <li><a href="/products/mousepad">mousepad</a></li>
+            </ul>
         </PageInfo>
         <PageInfo>
             <a class="page-anchor" href="/kiwipro">kiwiPro</a>
@@ -49,6 +54,17 @@ const year = new Date().getFullYear();
 <style>
     a {
         text-decoration: none;
+    }
+
+    ul {
+        list-style: none;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    ul li a {
+        color: #999;
     }
 
     .left-content {
@@ -139,7 +155,7 @@ const year = new Date().getFullYear();
     }
 </style>
 
-<script>
+<!-- <script>
     window.addEventListener('DOMContentLoaded', () => {
         const main = document.querySelector('main');
         const footer = document.querySelector('footer');
@@ -160,4 +176,4 @@ const year = new Date().getFullYear();
 
         window.addEventListener('resize', adjustFooterPosition);
     });
-</script>
+</script>  -->

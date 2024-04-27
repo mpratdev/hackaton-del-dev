@@ -1,0 +1,72 @@
+---
+import Phone from '../../../public/icons/Phone.astro';
+import Email from '../../../public/icons/Email.astro'
+
+interface Props {
+    method: string;
+    contact: string;
+    text: string;
+    schedule: string;
+}
+
+const { method, contact, text, schedule } = Astro.props;
+---
+
+<section class={method}>
+    <span id="phone">
+        <Phone />
+    </span>
+    <span id="email">
+        <Email />
+    </span>
+    <h3>{method.toUpperCase()}</h3>
+    <h4>{contact}</h4>
+    <p class="schedule">{schedule}</p>
+    <p>{text}</p>
+</section>
+
+<style>
+    section {
+        width: 95%;
+        height: 100%;
+        margin: auto;
+        background-color: #292929;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 50px;
+        box-sizing: border-box;
+        color: #ddd;
+    }
+
+    .phone #email, .email #phone {
+        display: none;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    h4 {
+        color: #b6e98b;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .schedule {
+        margin-bottom: -5px;
+    }
+
+    @media screen and (max-width: 1050px) {
+        section {
+            width: 60%;
+            min-width: 300px;
+        }
+    }
+</style>
