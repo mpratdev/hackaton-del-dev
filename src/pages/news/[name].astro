@@ -1,0 +1,63 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { pages } from "./news"
+
+export async function getStaticPaths() {
+    return pages.map(({ image, name, href, title, description, author, category, publication_date, source, paragraphs }) => {
+        return {
+        params: { name },
+        props: { image, href, title, description, author, category, publication_date, source, paragraphs },
+        };
+    });
+}
+
+const { name } = Astro.params;
+const { image, href, title, description, author, category, publication_date, source, paragraphs } =
+    Astro.props;
+---
+
+<Layout title=`Kiwi | ${title}`>
+    <section class="article">
+        <div class="current-page">/ <a href="/news">news</a> / {title}</div>
+        <p>{category}</p>
+        <img src={image} />
+        <p>{author}, {publication_date}</p>
+        <h1>{title}</h1>
+        <h2>{description}</h2>
+        {paragraphs !== undefined ? (
+            paragraphs.map((paragraph: string) => (
+                <p>{paragraph}</p>
+            ))
+        ) : null}
+    </section>    
+</Layout>
+
+<style>
+    a {
+        color: #b5e98a;
+    }
+
+    .current-page {
+        font-size: 1.2rem;
+        color: #ddd;
+        margin-bottom: 20px;
+    }
+
+    .article {
+        padding: 20px;
+        color: #ddd;
+        text-wrap: pretty;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+</style>
