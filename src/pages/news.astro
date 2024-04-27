@@ -1,7 +1,62 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { viper } from "../../public/news/viper.json";
+import { openai } from "../../public/news/openai.json";
+import { g920 } from "../../public/news/g920.json";
+import ArticleCard from "../components/news/ArticleCard.astro";
 ---
 
 <Layout title="Kiwi | News">
-    <h1>NEWS</h1>
+    <h2>ARTICLES</h2>
+    <section class="articles">
+        <ArticleCard
+            title={viper.title}
+            description={viper.description}
+            image={viper.image}
+            author={viper.author}
+            publication={viper.publication_date}
+            category={viper.category}
+            href="/news/viper"
+        />
+        <ArticleCard
+            title={openai.title}
+            description={openai.description}
+            image={openai.image}
+            author={openai.author}
+            publication={openai.publication_date}
+            category={openai.category}
+            href="/news/openai"
+        />
+        <ArticleCard
+            title={g920.title}
+            description={g920.description}
+            image={g920.image}
+            author={g920.author}
+            publication={g920.publication_date}
+            category={g920.category}
+            href="/news/g920"
+        />
+    </section>
 </Layout>
+
+<style>
+    h2 {
+        text-align: center;
+        font-size: 3rem;
+        color: #ddd;
+        text-shadow: 2px 2px #00d36b;
+    }
+
+    .brand-products {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    @media screen and (max-width: 880px) {
+        .brand-products {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+        }
+    }
+</style>

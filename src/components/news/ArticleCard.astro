@@ -1,0 +1,113 @@
+---
+interface Props {
+    title: string;
+    description: string;
+    image: string;
+    author: string;
+    publication: string;
+    category: string;
+    href: string;
+}
+
+const { title, description, image, author, publication, category, href } =
+    Astro.props;
+---
+
+<div class="article-card">
+    <a href={href}>
+        <img src={image} />
+    </a>
+    <div class="information">
+        <div class="more-info">
+            <p class="when-info">{author}</p>
+            <p class="when-info">{publication}</p>
+            <p class="when-info" id="category">{category}</p>
+        </div>
+        <h3 class="name">{title}</h3>
+        <p class="description">
+            {description}
+        </p>
+        <a href={href}>
+            <div class="read">Read the article</div>
+        </a>
+    </div>
+</div>
+<br class="break" />
+
+<style>
+    a {
+        text-decoration: none;
+    }
+
+    .article-card {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        border-radius: 12px;
+        box-sizing: border-box;
+        padding-bottom: 30px;
+        margin-bottom: 45px;
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: 0;
+        border-radius: 12px;
+    }
+
+    .information {
+        padding: 5px 24px;
+        text-align: left;
+    }
+
+    .name {
+        color: #e1ff91;
+    }
+
+    .description {
+        color: #ccc;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+
+    .break {
+        display: none;
+    }
+
+    .more-info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .when-info {
+        border: 1px solid #ddd;
+        color: #222;
+        background: #ddd;
+        border-radius: 12px;
+        padding: 5px;
+    }
+
+    @media screen and (max-width: 880px) {
+        .break {
+            display: block;
+        }
+    }
+
+    .read {
+        width: 114px;
+        padding: 10px;
+        border-radius: 12px;
+        background: #00d46b;
+        margin: auto;
+        margin-top: 20px;
+        color: #000;
+        font-weight: bold;
+    }
+
+    .read:hover {
+        background: #30ff97;
+    }
+</style>
