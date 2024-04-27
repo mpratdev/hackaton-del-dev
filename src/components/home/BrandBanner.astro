@@ -1,12 +1,13 @@
 ---
 interface Props {
     brand: string;
+    margin?: string;
 }
 
-const { brand } = Astro.props;
+const { brand, margin } = Astro.props;
 ---
 
-<div>
+<div class={margin}>
     {brand}
 </div>
 
@@ -21,5 +22,9 @@ const { brand } = Astro.props;
         border-radius: 12px;
         margin-bottom: 20px;
         box-shadow: 0px 0px 3px#aaa;
+    }
+
+    .yes {
+        margin-right: 20px;
     }
 </style>

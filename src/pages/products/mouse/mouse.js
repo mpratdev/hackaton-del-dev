@@ -5,7 +5,7 @@ import {
 } from "../../../../public/products/mouse.json";
 
 const { basilisk, deathadder, viper } = razer;
-const { g705, prox, shroud } = logitech;
+const { mxmaster3, prox, shroud } = logitech;
 const { ec2c, ec2v2white, za12c } = zowie;
 
 export const pages = [
@@ -40,14 +40,14 @@ export const pages = [
         type: viper.type,
     },
     {
-        mouse: "g705",
-        name: g705.name,
-        description: g705.description,
-        image: g705.image,
-        originalPrice: g705["original-price"],
-        offertPrice: g705["offert-price"],
-        brand: g705.brand,
-        type: g705.type,
+        mouse: "mxmaster3",
+        name: mxmaster3.name,
+        description: mxmaster3.description,
+        image: mxmaster3.image,
+        originalPrice: mxmaster3["original-price"],
+        offertPrice: mxmaster3["offert-price"],
+        brand: mxmaster3.brand,
+        type: mxmaster3.type,
     },
     {
         mouse: "prox",

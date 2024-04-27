@@ -1,10 +1,16 @@
 ---
 import Cart from "../../../public/icons/Cart.astro";
+
+interface Props {
+    product: string;
+}
+
+const { product } = Astro.props;
 ---
 
-<button>
-    Add
-    <Cart />
+<button class={product}>
+    <span id="normal">Add</span><span id="product">Add to cart</span>
+    <span id="svg"><Cart /></span>
 </button>
 
 <style>
@@ -26,12 +32,29 @@ import Cart from "../../../public/icons/Cart.astro";
         align-items: center;
     }
 
+    #product {
+        display: none;
+    }
+
     button:hover {
         cursor: pointer;
     }
 
     button:active {
-        background: #e1ff91;
+        background: #24ff92;
         border: 1px solid #ddd;
+    }
+
+    .yes {
+        font-size: 1.5rem;
+    }
+
+    .yes #product {
+        display: block;
+        color: #000;
+    }
+
+    .yes #normal, .yes #svg {
+        display: none;
     }
 </style>

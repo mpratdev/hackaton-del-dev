@@ -13,7 +13,7 @@
       "deathadder": {
         "name": "Razer Deathadder V3 Pro",
         "description": "At more than 25% less weight than the Razer DeathAdder V2 Pro, it is one of the lightest ergonomic esports mice in history and guarantees the speed and control demanded by the world's best players.",
-        "image": "https://m.media-amazon.com/images/I/71ohoFWDWYL.jpg",
+        "image": "/deathadderv3pro.png",
         "original-price": "159,99 €",
         "offert-price": "149,99 €",
         "type": "mouse",
@@ -23,39 +23,42 @@
       "viper": {
         "name": "Razer Viper V2 Pro",
         "description": "Weighing 58g, enjoy one of the lightest wireless gaming mice, a favorite of the world's top esports professionals, with ultra-fast wireless performance and cutting-edge technology.",
-        "image": "https://cdn.idealo.com/folder/Product/201949/0/201949043/s11_produktbild_gross/razer-viper-v2-pro.jpg",
+        "image": "/v2pro.png",
         "original-price": "159,99 €",
         "offert-price": "139,99 €",
         "type": "mouse",
         "brand": "Razer",
-        "page": "/products/mouse/viperv2"
+        "page": "/products/mouse/viper"
       }
     },
     "logitech": {
       "prox": {
         "name": "Logitech Pro X Superlight",
         "description": "Less than 63 grams. Advanced LIGHTSPEED wireless technology with low latency. Sub-micron precision with HERO 25K sensor. Eliminate all obstacles with our lightest and fastest PRO mouse.",
-        "image": "https://resource.logitechg.com/w_480,c_lpad,ar_4:3,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-x-superlight/pro-x-superlight-black-gallery-6.png?v=1",
+        "image": "https://resource.logitechg.com/w_692,c_lpad,ar_4:3,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-x-superlight-2/gallery-5-pro-x-superlight-2-gaming-mouse-black.png?v=1",
+        "imageback": "https://resource.logitechg.com/w_692,c_lpad,ar_4:3,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-x-superlight-2/gallery-4-pro-x-superlight-2-gaming-mouse-black.png?v=1",
         "original-price": "165,00 €",
         "offert-price": "150,00 €",
         "type": "mouse",
         "brand": "Logitech",
         "page": "/products/mouse/superlight"
       },
-      "g705": {
-        "name": "Logitech G705",
-        "description": "From The Aurora Collection, the G705 wireless gaming mouse is shaped for comfort and control, with a design also suitable for small hands. With LIGHTSPEED wireless technology for gaming, RGB LIGHTSYNC and advanced technology for gaming.",
-        "image": "https://resource.logitechg.com/w_480,c_lpad,ar_4:3,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/mouse/g705-wireless-mouse/gallery/g705-gallery-3.png?v=1",
-        "original-price": "119,00 €",
+      "mxmaster3": {
+        "name": "Logitech MX Master 3",
+        "description": "The MX Master 3 wireless mouse is shaped for comfort and control, with a design also suitable for small hands. With LIGHTSPEED wireless technology for gaming, RGB LIGHTSYNC and advanced technology for gaming.",
+        "image": "https://resource.logitech.com/w_692,c_lpad,ar_4:3,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/mx-master-3s/gallery/mx-master-3s-mouse-top-view-graphite.png?v=1",
+        "imageback": "https://resource.logitech.com/w_692,c_lpad,ar_4:3,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/mx-master-3s/gallery/mx-master-3s-mouse-back-view-graphite.png?v=1",
+        "original-price": "135,00 €",
         "offert-price": "99,99 €",
         "type": "mouse",
         "brand": "Logitech",
-        "page": "/products/mouse/g705"
+        "page": "/products/mouse/mxmaster3"
       },
       "shroud": {
         "name": "Logitech G303 Shroud Edition",
         "description": "Aim higher with a remastered iconic mouse. Designed in collaboration with Shroud and to their specifications. LIGHTSPEED wireless technology, HERO 25K sensor and an incredible battery life of 145 hours of gaming.",
-        "image": "https://assets2.razerzone.com/images/pnx.assets/33b3ddff006018e916f46154995087c0/razer-basilisk-v3-x-hyperspeed-500x500.png",
+        "image": "https://resource.logitechg.com/w_692,c_lpad,ar_4:3,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/g305/g305-gallery-1.png?v=1",
+        "imageback": "https://resource.logitechg.com/w_692,c_lpad,ar_4:3,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/g305/g305-gallery-6.png?v=1",
         "original-price": "145,00 €",
         "offert-price": "135,99 €",
         "type": "mouse",

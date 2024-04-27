@@ -3,7 +3,7 @@ import { razer, logitech, zowie } from "../../../public/products/mouse.json";
 import Product from "./Product.astro";
 
 const { basilisk, deathadder, viper } = razer;
-const { prox, g705, shroud } = logitech;
+const { prox, mxmaster3, shroud } = logitech;
 const { ec2c, ec2v2white, za12c } = zowie;
 ---
 
@@ -46,12 +46,12 @@ const { ec2c, ec2v2white, za12c } = zowie;
         page={prox.page}
     />
     <Product
-        name={g705.name}
-        description={g705.description}
-        image={g705.image}
-        originalPrice={g705["original-price"]}
-        offertPrice={g705["offert-price"]}
-        page={g705.page}
+        name={mxmaster3.name}
+        description={mxmaster3.description}
+        image={mxmaster3.image}
+        originalPrice={mxmaster3["original-price"]}
+        offertPrice={mxmaster3["offert-price"]}
+        page={mxmaster3.page}
     />
     <Product
         name={shroud.name}

@@ -1,6 +1,7 @@
 ---
 import NavBar from '../components/NavBar.astro';
 import Footer from '../components/Footer.astro';
+import Loader from '../components/Loader.astro';
 
 interface Props {
 	title: string;
@@ -22,6 +23,7 @@ const { title } = Astro.props;
 	<body>
 		<NavBar />
 		<main>
+			<!-- <Loader /> -->
 			<slot />
 		</main>
 		<Footer />
@@ -78,5 +80,10 @@ const { title } = Astro.props;
 		font-weight: 600;
 		font-style: italic;
 		font-display: swap;
+	}
+
+	@keyframes spin {
+		0% { transform: rotate(0deg); }
+		100% { transform: rotate(360deg); }
 	}
 </style>
