@@ -1,5 +1,10 @@
 ---
 import Layout from "../../../layouts/Layout.astro";
+import WhyToBuy from "../../../components/home/WhyToBuy.astro";
+import BrandBanner from "../../../components/home/BrandBanner.astro";
+import AddToCart from "../../../components/buttons/AddToCart.astro";
+import Buy from "../../../components/buttons/Buy.astro";
+import GoBack from "../../../components/shop/GoBack.astro";
 import { pages } from "./keyboard"
 
 export async function getStaticPaths() {
@@ -17,84 +22,108 @@ const { name, description, image, originalPrice, offertPrice, brand, type } =
 ---
 
 <Layout title=`Kiwi | Keyboard - ${name}`>
-    <div class="product-card">
-        <img src={image} />
+    <section class="product">
+        <div class="image">
+            <img src={image} />
+        </div>
         <div class="information">
-            <h3 class="name">{name}</h3>
-            <p class="description">
+            <div class="brand-type info-item">
+                <BrandBanner brand={brand} margin="yes" />
+                <BrandBanner brand={type} />
+            </div>
+            <h3 class="name info-item">{name}</h3>
+            <p class="description info-item">
                 {description}
             </p>
-            <div>{brand}</div>
-            <div>{type}</div>
-            <div class="price">
+            <div class="price info-item">
                 <p class="offert-price">
                     {offertPrice}<span class="original-price">{originalPrice}</span>
                 </p>
             </div>
+            <div class="buttons">
+                <Buy />
+                <AddToCart product="yes"/>
+            </div>
         </div>
-    </div>
+    </section>
     <br class="break" />
+    <GoBack text="yes"/>
+    <WhyToBuy />
 </Layout>
 
 <style>
-    .product-card {
-        width: 90%;
-        height: 100%;
-        margin: auto;
+    .product {
+        display: grid;
+        grid-template-columns: 1.5fr 1.5fr;
+        height: 80vh;
+        background: #232323;
+        padding: 15px;
         border-radius: 12px;
-        box-sizing: border-box;
-        padding-bottom: 30px;
+    }
+
+    .info-item {
+        color: #ddd;
+        padding: 10px 30px;
+    }
+
+    .image {
     }
 
     img {
-        width: 100%;
-        margin-bottom: 0;
-        border-radius: 12px;
-    }
-
-    .information {
-        padding: 5px 24px;
-        text-align: left;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .name {
-        color: #e1ff91;
+        color: #B6E98B;
+        font-size: 2.3rem;
+        margin-bottom: 0;
+        margin-top: 10px;
     }
 
     .description {
-        color: #ccc;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 3; /* number of lines to show */
-        line-clamp: 3;
-        -webkit-box-orient: vertical;
+        font-size: 1.5rem;
+        margin-top: 10px;
+        margin-bottom: 0;
     }
 
-    .break {
-        display: none;
+    .brand-type {
+        display: flex;
+        margin-top: 60px;
+        margin-bottom: 0;
+    }
+
+    .buttons {
+        padding-left: 30px;
     }
 
     .offert-price {
         color: #ddd;
-        font-size: 1.2rem;
+        font-size: 2rem;
         font-weight: bold;
     }
 
     .original-price {
         color: #f00;
         text-decoration: line-through;
-        font-size: 1rem;
+        font-size: 1.5rem;
         margin-left: 20px;
     }
 
-    @media screen and (max-width: 880px) {
-        .product-card {
-            width: 60%;
-            height: 100%;
+    @media screen and (max-width: 1050px) {
+        .product {
+            grid-template-columns: 1fr;
+            height: auto;
+            padding-bottom: 30px;
         }
 
-        .break {
-            display: block;
+        .offert-price {
+            font-size: 1.6rem;
+        }
+
+        .original-price {
+            font-size: 1.1rem;
         }
     }
 </style>
