@@ -1,0 +1,33 @@
+<div class="loader"></div>
+
+<style>
+    .loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #343434 url("https://i.pinimg.com/originals/5c/92/46/5c9246d71e8bcf0656fa8475b767c6ab.gif") no-repeat center center;
+        transition: opacity 0.75s, visibility 0.75s;
+        z-index: 5;
+    }
+
+    .loader--hidden {
+        opacity: 0;
+        visibility: hidden;
+    }
+</style>
+
+<script>
+    window.addEventListener("load", () => {
+        const loader = document.querySelector(".loader");
+
+        setTimeout(() => {
+            loader?.classList.add("loader--hidden");
+
+            loader?.addEventListener("transitionend", () => {
+                document.body.removeChild(loader);
+            });
+        }, 1000);
+    });
+</script>

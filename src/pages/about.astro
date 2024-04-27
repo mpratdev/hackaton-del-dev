@@ -1,7 +1,78 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import TeamMember from "../components/about/TeamMember.astro";
 ---
 
 <Layout title="Kiwi | About Us">
-    <h1>ABOUT US</h1>
+    <section class="content">
+        <h1>About Us</h1>
+        <p>
+            At Kiwi, we are delighted to welcome you to our exciting new brand of electronic products. We are a fresh and vibrant company, created with passion and dedication by Martí Prat.
+        </p>
+        <p>
+            Our mission at Kiwi is simple yet powerful: we want to enhance your technology experience. From ergonomic mice to fast-responsive keyboards and premium-quality mouse pads, we strive to offer you products that are not only functional but also inspiring.
+        </p>
+        <p>
+            We know that we are on the journey of learning and growth, which is why we value every piece of feedback we receive. At Kiwi, we not only accept criticism, we appreciate it. It helps us to learn, to improve, and to continually surpass ourselves. Your opinion is crucial to us, and we are committed to listening to you and taking action to meet your needs and desires.
+        </p>
+        <p>
+            We take pride in our professionalism and elegance, but we also strive to be friendly and approachable in everything we do. We want you to feel like part of the Kiwi family because without you, our community, we wouldn't be where we are today.
+        </p>
+        <p>
+            Thank you for joining us on this exciting journey. We look forward to sharing many technological adventures with you as we continue to innovate and grow the Kiwi brand.
+        </p>
+        <p>
+            Welcome to the Kiwi family!
+        </p>
+        <h2 class="team-title">Meet Our Team</h2>
+        <section class="team">
+            <TeamMember github="https://github.com/mpratdev" image="/profile.jpeg" name="Martí Prat" position="Creator and CEO" />
+        </section>
+    </section>
 </Layout>
+
+<style>
+    .team {
+        display: flex;
+        justify-content: center;
+    }
+
+    .team-title {
+        margin-top: 70px;
+    }
+
+    .content {
+        color: #ddd;
+        text-align: center;
+        text-wrap: pretty;
+    }
+
+    h1, h2 {
+        font-weight: bold;
+        color: #B6E98C;
+        text-shadow: 5px 5px #17210f;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        text-wrap: pretty;
+    }
+
+    a {
+        color: #B6E98C;
+    }
+
+    @media screen and (max-width: 1050px) {
+        p {
+            font-size: 1.3rem;
+        }
+    }
+</style>

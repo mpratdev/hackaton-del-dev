@@ -1,0 +1,39 @@
+---
+interface Props {
+    image: string;
+    name: string;
+    position: string;
+    github: string;
+}
+
+const { image, name, position, github } = Astro.props;
+---
+
+<div class="card">
+    <a href={github} rel="noopener noreferrer" target="_blank">
+        <img src={image} />
+    </a>
+    <h2>{name}</h2>
+    <h3>{position}</h3>
+</div>
+
+<style>
+    .card {
+        width: 300px;
+        color: #ddd;
+    }
+
+    h2 {
+        font-weight: bold;
+    }
+
+    h3 {
+        font-weight: 400;
+        margin-top: -10px;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 12px;
+    }
+</style>
