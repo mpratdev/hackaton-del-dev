@@ -2,12 +2,13 @@
 interface Props {
     href: string;
     img: string;
+    padding?: string;
 }
 
-const { href, img } = Astro.props;
+const { href, img, padding } = Astro.props;
 ---
 
-<a href={href} class="brand-card" target="_blank" rel="noreferrer">
+<a id={padding} href={href} class="brand-card" target="_blank" rel="noreferrer noopener">
     <img class="brand-img" src={img} />
 </a>
 
@@ -21,6 +22,10 @@ const { href, img } = Astro.props;
         padding: 20px;
         transition: 500ms padding;
         background: linear-gradient(#dbdbdb, #00d36b);
+    }
+
+    #yes {
+        margin-bottom: 20px;
     }
 
     .brand-img {

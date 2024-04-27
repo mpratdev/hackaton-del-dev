@@ -1,0 +1,51 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Brand from "../components/home/Brand.astro";
+---
+
+<Layout title="Kiwi | Brands">
+    <section class="content">
+        <h2 id="brands">All Brands Are Here</h2>
+        <section class="cards">
+            <Brand padding="yes" href="https://zowie.benq.eu" img="../../../public/zowie.png" />
+            <Brand
+                padding="yes"
+                href="https://logitech.com"
+                img="../../../public/logitech.webp"
+            />
+            <Brand padding="yes" href="https://row.hyperx.com" img="../../../public/hyperx.png" />
+            <Brand href="https://www.razer.com/es-es" img="../../../public/razer.png" />
+            <Brand href="https://www.duckychannel.com.tw/en" img="../../../public/ducky.png" />
+            <Brand href="https://www.artisan-jp.com/nj_index_eng.html" img="../../../public/artisan.png" />
+        </section>
+    </section>
+</Layout>
+
+<style>
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2.1rem;
+        color: #b5e98a;
+        text-shadow: 2px 2px #000;
+    }
+
+    .break {
+        display: none;
+    }
+
+    @media screen and (max-width: 880px) {
+        .cards {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+        }
+    }
+</style>
